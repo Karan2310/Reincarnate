@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Sidebar.css'
 import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
+    const [social, setSocial] = useState(false);
+
+    const showSocial = () => {
+        setSocial(!social)
+    }
     return (
         <>
             <div className="sidebar conatiner-fluid h-100">
@@ -85,8 +90,22 @@ const Sidebar = () => {
 
                 </div>
 
-                <div className="container-fluid bottom p-0 m-0">
-                    <div className="socials py-2 px-3">
+                <div className="container-fluid bottom p-0 m-0" style={{ backgroundColor: social ? "#232328" : "#101016" }}>
+                    <div className={`social_link p-2 d-flex align-items-center justify-content-around w-100 ${social ? "d-flex" : "d-none"}`} style={{ fontSize: "1.4rem", backgroundColor: "#232328", }}>
+                        <a href="https://github.com/OlympusDAO" target={"blank"}>
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://olympusdao.medium.com/" target={"blank"}>
+                            <i class="fab fa-medium"></i>
+                        </a>
+                        <a href="https://twitter.com/OlympusDAO" target={"blank"}>
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://discord.com/invite/6QjjtUcfM4" target={"blank"}>
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                    <div className="socials py-2 px-3" onClick={showSocial}>
                         <div className="nav_li m-0">
                             <i className="fas fa-share-alt"></i>
                             <p>Socials</p>
