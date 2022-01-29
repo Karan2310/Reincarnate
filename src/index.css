@@ -13,6 +13,7 @@ body.light {
   --searchbarColor: rgba(255, 255, 255, 0.544);
   --cardColor: #fff;
   --shadow: -1rem 1rem 3rem rgba(0, 0, 0, 0.115);
+  --pink: ;
 }
 body.dark {
   --bgColor: #1f2128;

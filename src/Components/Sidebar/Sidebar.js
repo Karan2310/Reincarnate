@@ -39,9 +39,9 @@ const Sidebar = () => {
                             <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div className="accordion-body p-0">
                                     <ul style={{ listStyle: "none", paddingLeft: "0.7rem", fontSize: "0.8rem" }}>
-                                        <li>Dai</li>
-                                        <li>Dai</li>
-                                        <li>Dai</li>
+                                        <li>List 1</li>
+                                        <li>List 2</li>
+                                        <li>List 3</li>
                                     </ul>
                                 </div>
                             </div>

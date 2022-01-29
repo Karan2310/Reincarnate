@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import './Darshboard.css'
-import SearchBar from '../../Components/Dashboard/SearchBar/SearchBar';
+import SearchBar from '../../Components/SearchBar/SearchBar';
 import Cards from '../../Components/Dashboard/Statics Cards/Cards';
 import Chart1 from '../../Assets/Yello chart.png'
 import Chart2 from '../../Assets/Pink chart.png'

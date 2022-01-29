@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './SearchBar.css'
-import Theme from '../../../Utils/Theme'
+import MobileNav from '../MobileNav/MobileNav';
+import Theme from '../../Utils/Theme'
 
 const SearchBar = () => {
     const [language, setLanguage] = useState(false);
@@ -15,6 +16,7 @@ const SearchBar = () => {
                 <div className="search-input">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <input type="text" placeholder='Search...' />
+                    <MobileNav />
                 </div>
                 <div className="d-flex align-items-center justify-content-between w-100 mt-2 mt-md-0" style={{ maxWidth: "280px" }}>
                     {/* Theme */}
