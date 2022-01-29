@@ -14,6 +14,7 @@
   height: 95vh;
   width: 95vw;
   position: relative;
+  min-width: fit-content;
 }
 
 .mob-nav .sidebar .accordion-button {
@@ -23,6 +24,6 @@
 .mob-nav #close-btn {
   position: absolute;
   z-index: 5;
-  top: 1.8rem;
-  right: 2rem;
+  top: 1.6rem;
+  right: 3rem;
 }
