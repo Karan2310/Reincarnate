@@ -2,10 +2,11 @@ import React from 'react';
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import SearchBar from '../../Components/SearchBar/SearchBar';
 
-const Bond = () => {
+const Stake = () => {
     return (
         <>
             <div className="dashboard container-fluid ">
+                Stake
                 <div className="row h-100">
                     <div className="col-md-3 col-lg-2 p-3 h-100 d-none d-md-block">
                         <Sidebar />
@@ -29,4 +30,4 @@ const Bond = () => {
     );
 };
 
-export default Bond;
+export default Stake;
