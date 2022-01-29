@@ -1,3 +1,24 @@
 .dashboard {
   height: 100vh;
+  position: relative;
+}
+
+.footer {
+  position: fixed;
+  width: 83%;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.204);
+  backdrop-filter: blur(5px);
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+body.light .footer {
+  background-color: rgba(255, 255, 255, 0.197);
+}
+
+@media only screen and (max-width: 766px) {
+  .footer {
+    width: 100%;
+  }
 }

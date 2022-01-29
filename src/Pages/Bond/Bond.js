@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from '../../Components/Dashboard/Sidebar/Sidebar';
+import Sidebar from '../../Components/Sidebar/Sidebar';
 
 const Bond = () => {
     return (

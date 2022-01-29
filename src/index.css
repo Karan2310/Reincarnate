@@ -5,19 +5,21 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  transition: all 0.3s ease;
 }
 
 body.light {
-  --bgColor: #fff;
+  --bgColor: rgb(241, 241, 241);
   --text: #000;
-  --searchbarColor: #fff;
-  --shadow: -1rem 1rem 3rem rgba(0, 0, 0, 0.163);
+  --searchbarColor: rgba(255, 255, 255, 0.544);
+  --cardColor: #fff;
+  --shadow: -1rem 1rem 3rem rgba(0, 0, 0, 0.115);
 }
 body.dark {
-  --bgColor: #1f2027;
+  --bgColor: #1f2128;
   --text: #fff;
-  --searchbarColor: #14151a;
+  --searchbarColor: rgba(9, 10, 12, 0.5);
+  --cardColor: #242731;
+  --shadow: 0 0 0;
 }
 
 p,

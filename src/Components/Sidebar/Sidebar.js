@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Sidebar.css'
 import { NavLink } from 'react-router-dom';
+import logo from '../../Assets/Logo.png'
 
 const Sidebar = () => {
     const [social, setSocial] = useState(false);
@@ -10,10 +11,11 @@ const Sidebar = () => {
     }
     return (
         <>
-            <div className="sidebar conatiner-fluid h-100 ">
+            <div className="sidebar conatiner-fluid  ">
                 <div className="top p-3 d-flex align-items-center text-light">
-                    <h5>Olympus</h5>
-                    <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/24/ffffff/external-omega-denote-as-the-ultimate-limit-of-set-text-regular-tal-revivo.png" width={"20px"} alt='olympus' />
+                    <a href="https://www.olympusdao.finance/" target={"blank"}>
+                        <img src={logo} alt="OlympusDAO" className='img-fluid ms-2' style={{ width: "100px" }} />
+                    </a>
                 </div>
 
                 <div className="container-fluid middle py-1 px-3">
@@ -82,7 +84,7 @@ const Sidebar = () => {
                             <i className="fas fa-solid fa-file"></i>
                             <p>Docs</p>
                         </NavLink>
-                        <NavLink activeClassName="active-link" to="/bug_bounty" className="nav_li">
+                        <NavLink activeClassName="active-link" to="/bug_bounty" className="nav_li mb-4">
                             <i className="fas fa-solid fa-bug"></i>
                             <p>Bug Bounty</p>
                         </NavLink>
