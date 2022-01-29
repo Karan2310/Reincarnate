@@ -10,8 +10,8 @@ const Sidebar = () => {
     }
     return (
         <>
-            <div className="sidebar conatiner-fluid h-100">
-                <div className="top p-3 d-flex align-items-center ">
+            <div className="sidebar conatiner-fluid h-100 ">
+                <div className="top p-3 d-flex align-items-center text-light">
                     <h5>Olympus</h5>
                     <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/24/ffffff/external-omega-denote-as-the-ultimate-limit-of-set-text-regular-tal-revivo.png" width={"20px"} alt='olympus' />
                 </div>

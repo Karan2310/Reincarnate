@@ -1,22 +1,51 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 const Theme = () => {
+    let clickedClass = "clicked";
+    const body = document.body;
+    const lightTheme = "light"
+    const darkTheme = "dark"
+    let theme;
 
+    let nowTheme = localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark";
 
-    const [darkTheme, setDarkTheme] = useState(false);
+    const [curTheme, setCurTheme] = useState(nowTheme);
 
-    const themeChange = () => {
-        setDarkTheme(!darkTheme)
-        document.documentElement.setAttribute('data-theme', `${darkTheme ? "dark" : "light"}`)
+    if (localStorage) {
+        theme = localStorage.getItem("theme")
     }
 
-    useEffect(() => {
-        document.documentElement.setAttribute('data-theme', "dark")
-    }, []);
+    if (theme === lightTheme || theme === darkTheme) {
+        body.classList.add(theme)
+    } else {
+        body.classList.add(darkTheme)
+    }
 
-    return <div>
-        <button onClick={themeChange}>Change Theme</button>
-    </div>;
+    const switchTheme = (e) => {
+        if (theme === darkTheme) {
+            body.classList.replace(darkTheme, lightTheme);
+            e.target.classList.remove(clickedClass)
+            localStorage.setItem("theme", "light")
+            theme = lightTheme
+            setCurTheme("light")
+        } else {
+            body.classList.replace(lightTheme, darkTheme);
+            e.target.classList.add(clickedClass)
+            localStorage.setItem("theme", "dark")
+            theme = darkTheme
+            setCurTheme("dark")
+        }
+    }
+
+
+
+    return (
+        <div className='theme'>
+            <button className={theme === "dark" ? clickedClass : ""} id='darkMode' onClick={(e) => switchTheme(e)}>
+                {curTheme === "dark" ? <i class="fa-solid fa-moon"></i> : <i class="fa-solid fa-sun"></i>}
+            </button>
+        </div>
+    );
 };
 
 export default Theme;

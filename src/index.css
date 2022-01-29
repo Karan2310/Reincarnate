@@ -5,15 +5,19 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
 }
 
-[data-theme="light"] {
+body.light {
   --bgColor: #fff;
   --text: #000;
+  --searchbarColor: #fff;
+  --shadow: -1rem 1rem 3rem rgba(0, 0, 0, 0.163);
 }
-[data-theme="dark"] {
+body.dark {
   --bgColor: #1f2027;
   --text: #fff;
+  --searchbarColor: #14151a;
 }
 
 p,
@@ -25,13 +29,15 @@ h5,
 ul,
 li {
   margin: 0;
+  padding: 0;
 }
 
 body {
-  /* background-color: var(--bgColor); */
-  /* color: var(--text); */
-  background-color: #1f2027;
-  color: white;
+  transition: all 0.5s ease;
+  background-color: var(--bgColor);
+  color: var(--text);
+  /* background-color: #1f2027;
+  color: white; */
 }
 
 .fw-400 {
