@@ -11,17 +11,17 @@ const Stake = () => {
             button: "Stake on Joe"
         },
         {
-            asset: "gOHM-wETH",
+            asset: "gREM-wETH",
             tvl: "$2,985,650.26",
             button: "Stake on Sushi"
         },
         {
-            asset: "gOHM-wETH",
+            asset: "gREM-wETH",
             tvl: "$2,038,497.23",
             button: "Stake on Joe (Polygon)"
         },
         {
-            asset: "gOHM-FTM",
+            asset: "gREM-FTM",
             tvl: "$1,099,128.90",
             button: "Stake on Spirit (Fantom)"
         },
@@ -39,8 +39,8 @@ const Stake = () => {
 
                             <div className="px-4 px-md-0 w-100">
                                 <div className="cards container-fluid px-4">
-                                    <h5 className='fw-600 text-start'>Single Stake (3, 3)</h5>
-                                    <p className='fw-500 text-start mt-1' style={{ fontSize: "0.7rem" }}>5 hrs, 50 mins to next rebase</p>
+                                    <p className='fw-600 text-start' style={{ fontSize: "1.1rem" }}><i className="fas fa-layer-group" style={{ color: "#615A9E", fontSize: "1.3rem" }}></i>Single Stake (3, 3)</p>
+                                    <p className='fw-500 text-start mt-1' style={{ fontSize: "0.6rem" }}>5 hrs, 50 mins to next rebase</p>
                                     <div className="row my-2 mt-4 ">
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
@@ -64,17 +64,17 @@ const Stake = () => {
                                     <button className='cw-btn mt-3 mb-2'>Connect Wallet</button>
                                 </div>
 
-                                <div className="cards container-fluid px-4 my-5">
-                                    <h5 className='fw-600 text-start mb-4'>Farm Pool</h5>
+                                <div className="cards container-fluid p-4 my-5">
+                                    <h5 className='fw-600 text-start mb-4' style={{ fontSize: "1.1rem" }}>Farm Pool</h5>
 
                                     <div className="d-none d-md-flex flex-column flex-md-row  align-items-center justify-content-md-between  my-md-1 ">
                                         <div className="d-flex align-items-center ">
                                             <div className="fw-500 ms-5 ">
-                                                <p className='ms-5 silent'>Assets</p>
+                                                <p className='ms-5 silent' style={{ fontSize: "0.9rem" }}>Assets</p>
                                             </div>
                                         </div>
                                         <div className="mt-3 mb-2 m-md-0 ">
-                                            <p className='ms-4 silent'>TVL</p>
+                                            <p className='ms-4 silent' style={{ fontSize: "0.9rem" }}>TVL</p>
                                         </div>
                                         <div className='stake-btn'></div>
                                     </div>
@@ -87,15 +87,15 @@ const Stake = () => {
                                                     <div className="circle"></div>
                                                     <div className="circle2" ></div>
                                                     <div className="fw-500 ms-3">
-                                                        <p>{asset}</p>
+                                                        <p style={{ fontSize: "1rem" }}>{asset}</p>
                                                     </div>
                                                 </div>
                                                 <div className="mt-3 mb-2 m-md-0 d-flex justify-content-between tvl">
                                                     <p className='silent d-block d-md-none'>TVL</p>
-                                                    <p className='fw-500'>{tvl} </p>
+                                                    <p className='fw-500' style={{ fontSize: "1rem" }}>{tvl} </p>
                                                 </div>
                                                 <div className='stake-btn'>
-                                                    <button className='cw-btn mt-3 mb-2 px-2 w-100 te-center'>{button} <i class="fas fa-external-link-alt ms-2"></i></button>
+                                                    <button className='cw-btn mt-3 mb-2 px-2 w-100 te-center' style={{ fontSize: "0.9rem" }}>{button} <i class="fas fa-external-link-alt ms-2"></i></button>
                                                 </div>
                                             </div>
                                         )

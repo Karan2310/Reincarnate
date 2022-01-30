@@ -4,7 +4,7 @@
   position: relative;
   min-width: fit-content;
   top: -15px;
-  left: -15 px;
+  right: -8px;
   border-radius: 0;
 }
 
@@ -13,14 +13,14 @@
 }
 
 .mob-nav .nav_li {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .mob-nav #close-btn {
   position: absolute;
   z-index: 5;
   top: 1rem;
-  right: 3rem;
+  right: 2rem;
 }
 
 .mob-nav .menu {

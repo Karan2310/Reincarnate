@@ -5,25 +5,26 @@
 
 .stake .title {
   color: rgb(126, 126, 126);
+  font-size: 0.7rem;
 }
 
 .stake .data {
   color: var(--text);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
 .stake .cards .circle,
 .stake .circle2 {
   border: 2px solid var(--text);
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   display: block;
   border-radius: 50%;
 }
 
 .stake .cards .circle2 {
-  margin-left: -10px;
+  margin-left: -15px;
   background-color: rgb(131, 214, 214);
 }
 
@@ -33,6 +34,11 @@
 
 .stake .stake-btn {
   width: 35%;
+  text-align: center;
+}
+
+.stake .stake-btn i {
+  color: var(--text);
 }
 
 .stake .silent {
@@ -40,10 +46,6 @@
 }
 
 @media only screen and (max-width: 766px) {
-  .stake .cards {
-    margin-top: 120px;
-  }
-
   .stake .stake-btn {
     width: 100%;
   }

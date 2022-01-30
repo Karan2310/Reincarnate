@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import SearchBar from '../../Components/SearchBar/SearchBar';
 import './Wrap.css'
@@ -17,8 +16,8 @@ const Wrap = () => {
                             <SearchBar />
 
                             <div className="px-4 px-md-0 w-100">
-                                <div className="cards container-fluid px-4">
-                                    <h5 className='fw-600 text-start'>Wrap/Unwrap</h5>
+                                <div className="cards container-fluid p-4">
+                                    <h5 className='fw-600 text-start' style={{ fontSize: "1.1rem" }}><i className="fas fa-toilet-paper" style={{ color: "#615A9E", fontSize: "1.3rem" }}></i>Wrap/Unwrap</h5>
                                     <div className="row my-2 mt-4 ">
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
@@ -39,11 +38,10 @@ const Wrap = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <button className='cw-btn mt-3 mb-2'>Connect Wallet</button>
+                                    <button className='cw-btn mt-4 mb-2'>Connect Wallet</button>
                                 </div>
                             </div>
                         </div>
-
 
                         {/* Footer */}
                         <div className="footer d-flex justify-content-center">

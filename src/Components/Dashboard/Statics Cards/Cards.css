@@ -4,7 +4,7 @@
 
 .cards {
   background-color: var(--cardColor);
-  padding: 1.2rem 0rem;
+  padding: 1rem 0rem;
   border-radius: 25px;
   box-shadow: var(--shadow);
   text-align: center;
@@ -12,10 +12,9 @@
 
 .cards .title {
   color: rgb(126, 126, 126);
+  font-size: 0.8rem;
 }
 
-@media only screen and (max-width: 766px) {
-  .cards_con {
-    margin-top: 8rem;
-  }
+.cards .data {
+  font-size: 1.2rem;
 }

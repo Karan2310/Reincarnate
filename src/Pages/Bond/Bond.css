@@ -5,11 +5,12 @@
 
 .bond .title {
   color: rgb(126, 126, 126);
+  font-size: 0.8rem;
 }
 
 .bond .data {
   color: var(--text);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -60,7 +61,7 @@
 
 .bond .assets i {
   color: var(--text);
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 .bond .info {
@@ -70,10 +71,6 @@
 @media only screen and (max-width: 766px) {
   .bond .assets {
     width: 100%;
-  }
-
-  .bond .cards {
-    margin-top: 120px;
   }
 
   .bond .bond-btn {

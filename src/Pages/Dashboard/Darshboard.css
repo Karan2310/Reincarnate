@@ -12,6 +12,7 @@
   padding: 0.5rem;
   border-radius: 15px;
   z-index: 5;
+  font-size: 0.8rem;
 }
 
 body.light .footer {

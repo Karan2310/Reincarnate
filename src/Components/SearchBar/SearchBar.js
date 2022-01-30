@@ -12,13 +12,8 @@ const SearchBar = () => {
 
     return (
         <>
-            <div className="searchbar container-fluid py-2 px-4 flex-column flex-md-row">
-                <div className="search-input">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder='Search...' />
-                    <MobileNav />
-                </div>
-                <div className="d-flex align-items-center justify-content-between w-100 mt-2 mt-md-0" style={{ maxWidth: "280px" }}>
+            <div className="searchbar container-fluid p-2 flex-row">
+                <div className="d-flex align-items-center justify-content-between w-100 mt-md-0" >
                     {/* Theme */}
                     <Theme />
                     {/* Language */}
@@ -65,6 +60,7 @@ const SearchBar = () => {
                         <i class="fas fa-wallet"></i>
                         <p> Connect wallet</p>
                     </button>
+                    <MobileNav />
                 </div>
             </div>
         </>

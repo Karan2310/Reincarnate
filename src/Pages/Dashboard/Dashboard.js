@@ -10,9 +10,9 @@ import Chart3 from '../../Assets/Purple chart.png'
 const Dashboard = () => {
     return (
         <>
-            <div className="dashboard container-fluid ">
+            <div className="dashboard container-fluid ps-md-0">
                 <div className="row h-100">
-                    <div className="col-md-3 col-lg-2 p-3 h-100 d-none d-md-block">
+                    <div className="col-md-3 col-lg-2  h-100 d-none d-md-flex align-items-center justify-content-center">
                         <Sidebar />
                     </div>
                     <div className="col-12 col-md-9 col-lg-10 py-3 px-0 pe-md-3 ps-md-3 ">
@@ -24,17 +24,19 @@ const Dashboard = () => {
                         <Cards />
 
                         {/* Graphs */}
-                        <div className="cards mb-5 px-0">
-                            <div className="container-fluid">
-                                <div className="row">
-                                    <div className="col-md-6" >
-                                        <img src={Chart1} className='img-fluid' alt="chart" style={{ borderRadius: "15px" }} />
-                                    </div>
-                                    <div className="col-md-6 mt-3 mt-md-0" >
-                                        <img src={Chart2} className='img-fluid' alt="chart" style={{ borderRadius: "15px" }} />
-                                        <img src={Chart3} className='img-fluid' alt="chart" style={{ borderRadius: "15px", marginTop: "1rem" }} />
-                                    </div>
+                        <div className="graphs px-4 px-md-0">
+                            <div className="cards mb-5 px-0">
+                                <div className="container-fluid">
+                                    <div className="row p-0 m-0">
+                                        <div className="col-md-6" >
+                                            <img src={Chart1} className='img-fluid' alt="chart" style={{ borderRadius: "15px" }} />
+                                        </div>
+                                        <div className="col-md-6 mt-3 mt-md-0" >
+                                            <img src={Chart2} className='img-fluid' alt="chart" style={{ borderRadius: "15px" }} />
+                                            <img src={Chart3} className='img-fluid' alt="chart" style={{ borderRadius: "15px", marginTop: "1rem" }} />
+                                        </div>
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
