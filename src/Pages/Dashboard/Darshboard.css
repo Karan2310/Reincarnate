@@ -5,12 +5,13 @@
 
 .footer {
   position: fixed;
-  width: 83%;
+  width: 82%;
   bottom: 0px;
   background-color: rgba(0, 0, 0, 0.204);
   backdrop-filter: blur(5px);
   padding: 0.5rem;
   border-radius: 15px;
+  z-index: 5;
 }
 
 body.light .footer {

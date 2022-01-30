@@ -1,0 +1,90 @@
+.bond .cards {
+  margin-top: 80px;
+  max-width: 900px;
+}
+
+.bond .title {
+  color: rgb(126, 126, 126);
+}
+
+.bond .data {
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bond .cards .circle,
+.bond .circle2 {
+  border: 2px solid var(--text);
+  width: 35px;
+  height: 35px;
+  display: block;
+  border-radius: 50%;
+}
+
+.bond .cards .circle2 {
+  margin-left: -10px;
+  background-color: rgb(131, 214, 214);
+}
+
+.bond .bond-btn button {
+  padding: 0.5rem;
+}
+
+.bond .bond-btn {
+  width: 20%;
+}
+
+.bond .silent {
+  color: #656971;
+}
+
+.bond .green {
+  color: rgb(10, 177, 10);
+}
+
+.bond .assets {
+  width: 22%;
+  text-align: start;
+}
+
+.bond .assets a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.8rem;
+}
+
+.bond .assets a:hover {
+  text-decoration: underline;
+}
+
+.bond .assets i {
+  color: var(--text);
+  font-size: 0.8rem;
+}
+
+.bond .info {
+  width: 75%;
+}
+
+@media only screen and (max-width: 766px) {
+  .bond .assets {
+    width: 100%;
+  }
+
+  .bond .cards {
+    margin-top: 120px;
+  }
+
+  .bond .bond-btn {
+    width: 100%;
+  }
+
+  .bond .tvl {
+    width: 100%;
+  }
+
+  .bond .info {
+    width: 100%;
+  }
+}
