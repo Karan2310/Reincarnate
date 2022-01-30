@@ -30,7 +30,7 @@ const Cards = () => {
     ]
     return (
         <>
-            <div className="cards_con container-fluid mb-4 px-4 py-2 p-md-0">
+            <div className="cards_con container-fluid mb-4 px-4 py-2 p-md-0" >
                 <div className="row gy-2">
                     {cards.map((curElem) => {
                         const { title, data } = curElem

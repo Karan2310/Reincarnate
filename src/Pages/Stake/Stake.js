@@ -37,7 +37,7 @@ const Stake = () => {
                         <div className="d-flex align-content-center justify-content-center ">
                             <SearchBar />
 
-                            <div className="px-4 px-md-0 w-100">
+                            <div className="px-4 px-md-0 w-100" data-aos="fade-up">
                                 <div className="cards container-fluid px-4">
                                     <p className='fw-600 text-start' style={{ fontSize: "1.1rem" }}><i className="fas fa-layer-group" style={{ color: "#615A9E", fontSize: "1.3rem" }}></i>Single Stake (3, 3)</p>
                                     <p className='fw-500 text-start mt-1' style={{ fontSize: "0.6rem" }}>5 hrs, 50 mins to next rebase</p>

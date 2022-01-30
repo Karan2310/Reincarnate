@@ -15,7 +15,7 @@ const Wrap = () => {
                         <div className="d-flex align-content-center justify-content-center ">
                             <SearchBar />
 
-                            <div className="px-4 px-md-0 w-100 conatiner-fluid">
+                            <div className="px-4 px-md-0 w-100 conatiner-fluid" data-aos="fade-up">
                                 <div className="cards container-fluid p-4">
                                     <h5 className='fw-600 text-start' style={{ fontSize: "1.1rem" }}><i className="fas fa-toilet-paper" style={{ color: "#615A9E", fontSize: "1.3rem" }}></i>Wrap/Unwrap</h5>
                                     <div className="row my-2 mt-4 ">

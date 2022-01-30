@@ -97,7 +97,7 @@ const Sidebar = (props) => {
                 </div>
 
                 <div className="container-fluid bottom p-0 m-0" style={{ backgroundColor: social ? "#232328" : "#101016" }}>
-                    <div className={`social_link p-2 d-flex align-items-center justify-content-around w-100 ${social ? "d-flex" : "d-none"}`} style={{ fontSize: "1.4rem", backgroundColor: "#232328", }}>
+                    <div className={`social_link p-2 d-flex align-items-center justify-content-around w-100 ${social ? "d-flex" : "d-none"}`} style={{ fontSize: "1.4rem", backgroundColor: "#232328", flexWrap: "wrap" }}>
                         <a href="https://github.com/Reincarnate" target={"blank"}>
                             <i class="fab fa-github"></i>
                         </a>

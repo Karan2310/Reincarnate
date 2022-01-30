@@ -10,12 +10,12 @@ import Chart3 from '../../Assets/Purple chart.png'
 const Dashboard = () => {
     return (
         <>
-            <div className="dashboard container-fluid ">
+            <div className="dashboard container-fluid" >
                 <div className="row h-100">
                     <div className="col-md-3 col-lg-2 p-3 h-100 d-none d-md-block">
                         <Sidebar />
                     </div>
-                    <div className="col-12 col-md-9 col-lg-10 py-3 px-0 pe-md-3 ps-md-3 ps-lg-5 ">
+                    <div className="col-12 col-md-9 col-lg-10 py-3 px-0 pe-md-3 ps-md-3 ps-lg-5 " data-aos="fade-up">
                         <div className="d-flex align-content-center justify-content-center">
                             <SearchBar />
                         </div>
@@ -24,7 +24,7 @@ const Dashboard = () => {
                         <Cards />
 
                         {/* Graphs */}
-                        <div className="graphs px-4 px-md-0">
+                        <div className="graphs px-4 px-md-0" >
                             <div className="cards mb-5 px-0">
                                 <div className="container-fluid">
                                     <div className="row p-0 m-0">
