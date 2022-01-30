@@ -39,7 +39,7 @@ const Wrap = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <button className='cw-btn mt-5 mb-2'>Connect Wallet</button>
+                                    <button className='cw-btn mt-3 mb-2'>Connect Wallet</button>
                                 </div>
                             </div>
                         </div>
