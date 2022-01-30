@@ -41,7 +41,7 @@ const Stake = () => {
                                 <div className="cards container-fluid px-4">
                                     <p className='fw-600 text-start' style={{ fontSize: "1.1rem" }}><i className="fas fa-layer-group" style={{ color: "#615A9E", fontSize: "1.3rem" }}></i>Single Stake (3, 3)</p>
                                     <p className='fw-500 text-start mt-1' style={{ fontSize: "0.6rem" }}>5 hrs, 50 mins to next rebase</p>
-                                    <div className="row my-2 mt-4 ">
+                                    <div className="row my-2 mt-3 ">
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
                                                 <p className='title'>APY</p>
@@ -57,11 +57,11 @@ const Stake = () => {
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
                                                 <p className='title'>Current Index</p>
-                                                <p className='data'>74.7 sOHM</p>
+                                                <p className='data'>74.7 sREM</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <button className='cw-btn mt-3 mb-2'>Connect Wallet</button>
+                                    <button className='cw-btn mt-4 mb-3'>Connect Wallet</button>
                                 </div>
 
                                 <div className="cards container-fluid p-4 my-5">

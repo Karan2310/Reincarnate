@@ -5,6 +5,7 @@
   position: fixed;
   overflow: hidden;
   backdrop-filter: blur(5px);
+  width: 17%;
   min-width: fit-content;
 }
 

@@ -1,11 +1,10 @@
 .mob-nav .sidebar {
-  height: 95vh;
+  height: 100vh;
   width: 100vw;
-  position: relative;
+  position: absolute;
   min-width: fit-content;
-  top: -15px;
-  right: -8px;
   border-radius: 0;
+  padding: 0 1rem;
 }
 
 .mob-nav .sidebar .accordion-button {
@@ -13,32 +12,21 @@
 }
 
 .mob-nav .nav_li {
-  font-size: 0.8rem;
-}
-
-.mob-nav #close-btn {
-  position: absolute;
-  z-index: 5;
-  top: 1rem;
-  right: 2rem;
+  font-size: 1rem;
 }
 
 .mob-nav .menu {
   background-color: #05050b;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 100vh;
-  width: 100vw;
   top: -16px;
-  left: -9px;
   padding: 1rem;
   min-width: 300px;
   transition: 0.5s ease;
   transform: translateY(-100%);
   left: -20px;
   z-index: 5;
+  width: 360px;
 }
 
 .mob-nav .menu.open {

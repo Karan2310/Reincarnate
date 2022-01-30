@@ -3,7 +3,7 @@ import './Sidebar.css'
 import { NavLink } from 'react-router-dom';
 import logo from '../../Assets/Logo.png'
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     const [social, setSocial] = useState(false);
 
     const showSocial = () => {
@@ -12,10 +12,14 @@ const Sidebar = () => {
     return (
         <>
             <div className="sidebar conatiner-fluid  ">
-                <div className="top p-3 d-flex align-items-center text-light">
-                    <a href="https://www.olympusdao.finance/" target={"blank"}>
-                        <img src={logo} alt="OlympusDAO" className='img-fluid ms-2' style={{ width: "100px" }} />
+                <div className="top p-3 d-flex align-items-center text-light justify-content-between w-100">
+                    <a href="##" target={"blank"} className=' d-flex align-items-center'>
+                        <img src={logo} alt="Reincarnate" className='img-fluid ' style={{ width: "30px" }} />
+                        <p className='fw-700'>Reincarnate</p>
                     </a>
+                    <button className='d-flex d-md-none ' onClick={props.toggleNav} >
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
                 </div>
 
                 <div className="container-fluid middle py-1 px-3">
@@ -66,8 +70,8 @@ const Sidebar = () => {
 
                     <div className="container-fluid  divider-div">
                         <a href="https://facit-modern.omtankestudio.com/" target={"blank"} className="nav_li">
-                            <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/24/ffffff/external-omega-denote-as-the-ultimate-limit-of-set-text-regular-tal-revivo.png" width={"20px"} alt='olympus' />
-                            <p>Olympus Pro</p>
+                            <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/24/ffffff/external-omega-denote-as-the-ultimate-limit-of-set-text-regular-tal-revivo.png" width={"20px"} alt='reincarnate' />
+                            <p>Reincarnate Pro</p>
                         </a>
                     </div>
 
@@ -94,13 +98,13 @@ const Sidebar = () => {
 
                 <div className="container-fluid bottom p-0 m-0" style={{ backgroundColor: social ? "#232328" : "#101016" }}>
                     <div className={`social_link p-2 d-flex align-items-center justify-content-around w-100 ${social ? "d-flex" : "d-none"}`} style={{ fontSize: "1.4rem", backgroundColor: "#232328", }}>
-                        <a href="https://github.com/OlympusDAO" target={"blank"}>
+                        <a href="https://github.com/Reincarnate" target={"blank"}>
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://olympusdao.medium.com/" target={"blank"}>
+                        <a href="https://Reincarnate.medium.com/" target={"blank"}>
                             <i class="fab fa-medium"></i>
                         </a>
-                        <a href="https://twitter.com/OlympusDAO" target={"blank"}>
+                        <a href="https://twitter.com/Reincarnate" target={"blank"}>
                             <i class="fab fa-twitter"></i>
                         </a>
                         <a href="https://discord.com/invite/6QjjtUcfM4" target={"blank"}>

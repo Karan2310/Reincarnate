@@ -16,10 +16,8 @@ const MobileNav = () => {
             </button>
 
             <div className={`menu d-flex align-items-center justify-content-center ${navActive ? "open" : ""}`}>
-                <button id='close-btn' onClick={toggleNav} >
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <Sidebar />
+
+                <Sidebar toggleNav={toggleNav} />
             </div>
         </div>
     );
