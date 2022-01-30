@@ -22,7 +22,7 @@ const SearchBar = () => {
                     {/* Theme */}
                     <Theme />
                     {/* Language */}
-                    <button style={{ position: "relative" }} onClick={chooseLanguage} >
+                    <button style={{ position: "relative", zIndex: "-1" }} onClick={chooseLanguage} >
                         <img src="https://img.icons8.com/color/48/000000/great-britain-circular.png" alt='language' />
                         <div className={`language ${language ? "" : "d-none"}`}>
                             <ul style={{ listStyle: "none" }}>

@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import SearchBar from '../../Components/SearchBar/SearchBar';
 import './Wrap.css'
 
 const Wrap = () => {
+
     return (
         <>
             <div className="wrap container-fluid ">

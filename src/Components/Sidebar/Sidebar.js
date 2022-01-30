@@ -47,7 +47,7 @@ const Sidebar = () => {
                             </div>
                         </div>
                     </div>
-                    <NavLink activeClassName="active-link" to="/stake" className="nav_li">
+                    <NavLink activeClassName="active-link" to="/stake" className="nav_li" >
                         <i className="fas fa-layer-group"></i>
                         <p>Stake</p>
                     </NavLink>
