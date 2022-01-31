@@ -61,12 +61,6 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .stake .ps-md-3 {
-    padding-left: 4rem !important;
-  }
-}
-
 @media only screen and (min-width: 992px) {
   .stake .ps-lg-5 {
     padding-left: 6rem !important;
