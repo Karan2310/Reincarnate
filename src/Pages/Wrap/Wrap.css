@@ -48,3 +48,27 @@
 .cw-btn:hover::before {
   transform: translateX(0);
 }
+
+@media only screen and (max-width: 766px) {
+  .footer {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .wrap .ps-md-3 {
+    padding-left: 4rem !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .wrap .ps-lg-5 {
+    padding-left: 6rem !important;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .wrap .ps-lg-5 {
+    padding-left: 3rem !important;
+  }
+}

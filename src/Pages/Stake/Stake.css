@@ -54,3 +54,27 @@
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 766px) {
+  .footer {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .stake .ps-md-3 {
+    padding-left: 4rem !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .stake .ps-lg-5 {
+    padding-left: 6rem !important;
+  }
+}
+
+@media only screen and (min-width: 1180px) {
+  .stake .ps-lg-5 {
+    padding-left: 3rem !important;
+  }
+}

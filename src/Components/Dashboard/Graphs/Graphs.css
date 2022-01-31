@@ -1,8 +1,8 @@
 .company-graph .company-card {
   background-color: #1a1c22;
   padding: 1rem 1.2rem;
-  margin: 0.5rem 0;
-  border-radius: 13px;
+  margin: 0.7rem 0;
+  border-radius: 18px;
   transition: 0.3s ease;
   cursor: pointer;
   min-width: fit-content;
