@@ -73,9 +73,9 @@ const Sidebar = (props) => {
                     </NavLink>
 
                     <div className="container-fluid  divider-div">
-                        <a href="https://facit-modern.omtankestudio.com/" target={"blank"} className="nav_li">
-                            <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/24/ffffff/external-omega-denote-as-the-ultimate-limit-of-set-text-regular-tal-revivo.png" width={"20px"} alt='reincarnate' />
-                            <p>Reincarnate Pro</p>
+                        <a href="##" target={"blank"} className=' d-flex align-items-center py-1'>
+                            <img src={logo} alt="Reincarnate" className='img-fluid ms-2' style={{ width: "20px" }} />
+                            <p className='fw-700'>Reincarnate Pro</p>
                         </a>
                     </div>
 
