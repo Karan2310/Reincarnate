@@ -43,13 +43,13 @@ const Bond = () => {
                                     <div className="row my-2 mt-4 ">
                                         <div className="col-md-6 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>Treasury Balance</p>
+                                                <p className='title'>Treasury Balance (USD)</p>
                                                 <p className='data'>$534,483,370</p>
                                             </div>
                                         </div>
                                         <div className="col-md-6 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>OHM Price</p>
+                                                <p className='title'>REM Price (USD)</p>
                                                 <p className='data'>$62.86</p>
                                             </div>
                                         </div>
@@ -103,13 +103,11 @@ const Bond = () => {
                                         )
                                     })}
                                     <div className="container my-2 mt-2 info" >
-                                        <p className='silent' style={{ fontSize: "0.8rem" }}>Important: New bonds are auto-staked (accrue rebase rewards) and no longer vest linearly. Simply claim as sOHM or gOHM at the end of the term.</p>
+                                        <p className='silent' style={{ fontSize: "0.8rem" }}>Important: New bonds are auto-staked (accrue rebase rewards) and no longer vest linearly. Simply claim as sREM or gREM at the end of the term.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
 
                         {/* Footer */}
                         <div className="footer d-flex justify-content-center">

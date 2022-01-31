@@ -5,15 +5,16 @@
 
 .wrap .title {
   color: rgb(126, 126, 126);
+  font-size: 0.8rem;
 }
 
 .wrap .data {
   color: var(--text);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
-/* From cssbuttons.io by @ernestnash */
+/* Button with fill Animation */
 .cw-btn {
   display: inline-block;
   padding: 0.5rem 1.6rem;

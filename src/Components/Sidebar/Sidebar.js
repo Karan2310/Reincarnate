@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../Assets/Logo.png'
 
 const Sidebar = (props) => {
+    // Toggle social menu
     const [social, setSocial] = useState(false);
 
     const showSocial = () => {
@@ -12,6 +13,7 @@ const Sidebar = (props) => {
     return (
         <>
             <div className="sidebar conatiner-fluid  ">
+                {/* Header */}
                 <div className="top p-3 d-flex align-items-center text-light justify-content-between w-100">
                     <a href="##" target={"blank"} className=' d-flex align-items-center'>
                         <img src={logo} alt="Reincarnate" className='img-fluid ' style={{ width: "30px" }} />
@@ -22,6 +24,7 @@ const Sidebar = (props) => {
                     </button>
                 </div>
 
+                {/* Middle links */}
                 <div className="container-fluid middle py-1 px-3">
                     <NavLink activeClassName="active-link" to="/" className="nav_li">
                         <i className="fas fa-chart-line" ></i>
@@ -40,6 +43,7 @@ const Sidebar = (props) => {
                                     Highest ROI
                                 </button>
                             </p>
+                            {/* Dropdown */}
                             <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div className="accordion-body p-0">
                                     <ul style={{ listStyle: "none", paddingLeft: "0.7rem", fontSize: "0.8rem" }}>
@@ -93,9 +97,9 @@ const Sidebar = (props) => {
                             <p>Bug Bounty</p>
                         </NavLink>
                     </div>
-
                 </div>
 
+                {/* Footer */}
                 <div className="container-fluid bottom p-0 m-0" style={{ backgroundColor: social ? "#232328" : "#101016" }}>
                     <div className={`social_link p-2 d-flex align-items-center justify-content-around w-100 ${social ? "d-flex" : "d-none"}`} style={{ fontSize: "1.4rem", backgroundColor: "#232328", flexWrap: "wrap" }}>
                         <a href="https://github.com/Reincarnate" target={"blank"}>

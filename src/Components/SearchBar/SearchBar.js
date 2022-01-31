@@ -56,10 +56,12 @@ const SearchBar = () => {
                             </ul>
                         </div>
                     </button>
+                    {/* Connect Wallet */}
                     <button style={{ width: "fit-content" }} className>
                         <i class="fas fa-wallet"></i>
                         <p> Connect wallet</p>
                     </button>
+                    {/* Mobile Nav button */}
                     <MobileNav />
                 </div>
             </div>

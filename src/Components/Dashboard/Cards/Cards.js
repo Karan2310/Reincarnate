@@ -2,6 +2,7 @@ import React from 'react';
 import './Cards.css'
 
 const Cards = () => {
+    // Card Content
     const cards = [
         {
             title: "Market Cap (USD)",
@@ -25,7 +26,7 @@ const Cards = () => {
         },
         {
             title: "Current Index",
-            data: "74.17 sOHM"
+            data: "74.17 sREM"
         },
     ]
     return (

@@ -50,13 +50,13 @@ const Stake = () => {
                                         </div>
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>Total Value Deposited</p>
+                                                <p className='title'>Total Value Deposited (USD)</p>
                                                 <p className='data'>$500,811,977</p>
                                             </div>
                                         </div>
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>Current Index</p>
+                                                <p className='title'>Current Index (REM)</p>
                                                 <p className='data'>74.7 sREM</p>
                                             </div>
                                         </div>
@@ -70,7 +70,7 @@ const Stake = () => {
                                     <div className="d-none d-md-flex flex-column flex-md-row  align-items-center justify-content-md-between  my-md-1 ">
                                         <div className="d-flex align-items-center ">
                                             <div className="fw-500 ms-5 ">
-                                                <p className='ms-5 silent' style={{ fontSize: "0.9rem" }}>Assets</p>
+                                                <p className='ms-5 silent' style={{ fontSize: "0.rem" }}>Assets</p>
                                             </div>
                                         </div>
                                         <div className="mt-3 mb-2 m-md-0 ">
@@ -100,12 +100,9 @@ const Stake = () => {
                                             </div>
                                         )
                                     })}
-
                                 </div>
                             </div>
                         </div>
-
-
 
                         {/* Footer */}
                         <div className="footer d-flex justify-content-center">
@@ -113,6 +110,7 @@ const Stake = () => {
                                 <p>Copyright © 2022</p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

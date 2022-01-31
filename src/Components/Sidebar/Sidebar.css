@@ -34,6 +34,7 @@
   background-color: #232328;
 }
 
+/* Active Nav */
 .sidebar .active {
   background-color: #2a2a34;
 }
@@ -53,7 +54,6 @@ img {
   text-decoration: none;
   color: #fff;
 }
-/* Navs */
 
 /* Bottom  */
 .sidebar .bottom {

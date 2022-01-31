@@ -7,12 +7,8 @@
   padding: 0 1rem;
 }
 
-.mob-nav .sidebar .accordion-button {
-  margin-left: 2rem !important;
-}
-
-.mob-nav .nav_li {
-  font-size: 1rem;
+.mob-nav .menu.open {
+  transform: translateY(0);
 }
 
 .mob-nav .menu {
@@ -29,6 +25,10 @@
   width: 360px;
 }
 
-.mob-nav .menu.open {
-  transform: translateY(0);
+.mob-nav .nav_li {
+  font-size: 1rem;
+}
+
+.mob-nav .sidebar .accordion-button {
+  margin-left: 2rem !important;
 }
