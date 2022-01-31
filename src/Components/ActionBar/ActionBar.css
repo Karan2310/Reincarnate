@@ -1,5 +1,5 @@
-.searchbar {
-  background-color: var(--searchbarColor);
+.ActionBar {
+  background-color: var(--ActionBarColor);
   border-radius: 15px;
   min-width: fit-content !important;
   max-width: fit-content !important;
@@ -14,7 +14,7 @@
 
 /* Buttons */
 
-.searchbar button {
+.ActionBar button {
   outline: none;
   border: 0;
   display: flex;
@@ -32,19 +32,19 @@
   margin: 0 0.4rem;
 }
 
-.searchbar .theme i,
-.searchbar button .fa-solid {
+.ActionBar .theme i,
+.ActionBar button .fa-solid {
   margin: 0;
   color: white;
   font-size: 1.2rem !important;
 }
-.searchbar button img {
+.ActionBar button img {
   width: 25px;
   margin: 0;
 }
 
 /* Language Dropdown */
-.searchbar .language {
+.ActionBar .language {
   background-color: #14151a;
   position: absolute;
   right: -0.5rem;
@@ -54,42 +54,42 @@
   color: #fff;
 }
 
-.searchbar .language .nav_li {
+.ActionBar .language .nav_li {
   padding: 0.3rem 0.8rem !important;
 }
 
-.searchbar .language .nav_li:hover {
+.ActionBar .language .nav_li:hover {
   background-color: #256cd0 !important;
 }
 
 /* Theme settings */
 
-body.dark .searchbar button {
+body.dark .ActionBar button {
   background-color: #2c2e36;
 }
-body.dark .searchbar button:hover {
+body.dark .ActionBar button:hover {
   background-color: #202127;
 }
 
-body.light .searchbar button {
+body.light .ActionBar button {
   background-color: rgb(243, 243, 243);
 }
 
-body.light .searchbar button:hover {
+body.light .ActionBar button:hover {
   background-color: #e7eef8;
 }
 
-body.light .searchbar button i {
+body.light .ActionBar button i {
   color: #081f3e;
 }
 
-body.light .searchbar {
+body.light .ActionBar {
   box-shadow: -1rem 1rem 3rem rgba(0, 0, 0, 0.163);
 }
 
 /* to keep it stick to right on md-lg */
 @media only screen and (min-width: 780px) {
-  .searchbar {
+  .ActionBar {
     right: 2rem;
   }
 }

@@ -5,7 +5,7 @@
 body.light {
   --bgColor: rgb(241, 241, 241);
   --text: #000;
-  --searchbarColor: rgba(255, 255, 255, 0.544);
+  --ActionBarColor: rgba(255, 255, 255, 0.544);
   --cardColor: #fff;
   --shadow: -1rem 1rem 3rem rgba(0, 0, 0, 0.115);
   --pink: ;
@@ -15,7 +15,7 @@ body.light {
 body.dark {
   --bgColor: #1f2128;
   --text: #fff;
-  --searchbarColor: rgba(9, 10, 12, 0.5);
+  --ActionBarColor: rgba(9, 10, 12, 0.5);
   --cardColor: #242731;
   --shadow: 0 0 0;
 }

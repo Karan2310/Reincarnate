@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './SearchBar.css'
+import './ActionBar.css'
 import MobileNav from '../MobileNav/MobileNav';
 import Theme from '../../Utils/Theme'
 
-const SearchBar = () => {
+const ActionBar = () => {
     const [language, setLanguage] = useState(false);
 
     const chooseLanguage = () => {
@@ -12,7 +12,7 @@ const SearchBar = () => {
 
     return (
         <>
-            <div className="searchbar container-fluid p-2 flex-row">
+            <div className="ActionBar container-fluid p-2 flex-row">
                 <div className="d-flex align-items-center justify-content-between w-100 mt-md-0" >
                     {/* Theme */}
                     <Theme />
@@ -70,4 +70,4 @@ const SearchBar = () => {
 
 };
 
-export default SearchBar;
+export default ActionBar;

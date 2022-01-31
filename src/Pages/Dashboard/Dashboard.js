@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import './Darshboard.css'
-import SearchBar from '../../Components/SearchBar/SearchBar';
+import ActionBar from '../../Components/ActionBar/ActionBar';
 import Cards from '../../Components/Dashboard/Cards/Cards';
 import Graphs from '../../Components/Dashboard/Graphs/Graphs';
 
@@ -15,7 +15,7 @@ const Dashboard = () => {
                     </div>
                     <div className="col-12 col-md-9 col-lg-10 py-3 px-0 pe-md-3 ps-md-3 ps-lg-5 " >
                         <div className="d-flex align-content-center justify-content-center">
-                            <SearchBar />
+                            <ActionBar />
                         </div>
 
                         <div data-aos="fade-up">

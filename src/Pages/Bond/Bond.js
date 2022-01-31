@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from '../../Components/Sidebar/Sidebar'
-import SearchBar from '../../Components/SearchBar/SearchBar';
+import ActionBar from '../../Components/ActionBar/ActionBar';
 import './Bond.css'
 
 const Bond = () => {
@@ -34,7 +34,7 @@ const Bond = () => {
                     </div>
                     <div className="col-12 col-md-9 col-lg-10 py-3 px-0 pe-md-3 ps-md-3 " >
                         <div className="d-flex align-content-center justify-content-center ">
-                            <SearchBar />
+                            <ActionBar />
 
                             <div className="px-4 px-md-0 w-100 mb-5 " data-aos="fade-up">
                                 <div className="cards container-fluid p-4">
