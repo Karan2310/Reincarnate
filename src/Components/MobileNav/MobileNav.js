@@ -13,7 +13,7 @@ const MobileNav = () => {
     return (
         <div className='mob-nav d-flex d-md-none'>
             {/* OPen Icon */}
-            <button onClick={toggleNav}>
+            <button onClick={toggleNav} className='d-flex align-items-center'>
                 <i class="fa-solid fa-ellipsis-vertical" />
             </button>
             <div className={`menu d-flex align-items-center justify-content-center ${navActive ? "open" : ""}`}>

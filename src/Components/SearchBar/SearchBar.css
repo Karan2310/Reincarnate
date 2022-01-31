@@ -33,12 +33,14 @@
 }
 
 .searchbar .theme i,
-.searchbar button img,
 .searchbar button .fa-solid {
   margin: 0;
   color: white;
   font-size: 1.2rem !important;
+}
+.searchbar button img {
   width: 25px;
+  margin: 0;
 }
 
 /* Language Dropdown */
