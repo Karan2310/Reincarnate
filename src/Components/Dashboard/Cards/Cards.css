@@ -5,7 +5,7 @@
 .cards {
   background-color: var(--cardColor);
   padding: 1rem 0rem;
-  border-radius: 25px;
+  border-radius: 2rem;
   box-shadow: var(--shadow);
   text-align: center;
 }

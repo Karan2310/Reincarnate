@@ -2,10 +2,8 @@ import React from 'react';
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import './Darshboard.css'
 import SearchBar from '../../Components/SearchBar/SearchBar';
-import Cards from '../../Components/Dashboard/Statics Cards/Cards';
-import Chart1 from '../../Assets/Yello chart.png'
-import Chart2 from '../../Assets/Pink chart.png'
-import Chart3 from '../../Assets/Purple chart.png'
+import Cards from '../../Components/Dashboard/Cards/Cards';
+import Graphs from '../../Components/Dashboard/Graphs/Graphs';
 
 const Dashboard = () => {
     return (
@@ -26,20 +24,12 @@ const Dashboard = () => {
 
                             {/* Graphs */}
                             <div className="graphs px-4 px-md-0" >
-                                <div className="cards mb-5 px-0">
-                                    <div className="container-fluid">
-                                        <div className="row p-0 m-0">
-                                            <div className="col-md-6" >
-                                                <img src={Chart1} className='img-fluid' alt="chart" style={{ borderRadius: "15px" }} />
-                                            </div>
-                                            <div className="col-md-6 mt-3 mt-md-0" >
-                                                <img src={Chart2} className='img-fluid' alt="chart" style={{ borderRadius: "15px" }} />
-                                                <img src={Chart3} className='img-fluid' alt="chart" style={{ borderRadius: "15px", marginTop: "1rem" }} />
-                                            </div>
-
-                                        </div>
+                                <div className="row">
+                                    <div className="col-md-10">
+                                        <Graphs />
                                     </div>
                                 </div>
+                                <div className="col-md-6"></div>
                             </div>
                         </div>
                         {/* Footer */}
