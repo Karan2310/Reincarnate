@@ -25,7 +25,7 @@ const Dashboard = () => {
                             {/* Graphs */}
                             <div className="graphs px-4 px-md-0" >
                                 <div className="row">
-                                    <div className="col-md-10">
+                                    <div className="col-md-12">
                                         <Graphs />
                                     </div>
                                 </div>

@@ -9,19 +9,19 @@ const Bond = () => {
             asset: "DAI",
             price: "$61.21",
             roi: "2.62%",
-            duration: "14 days",
+            purchased: "$61.21",
         },
         {
             asset: "FRAX",
             price: "$61.21",
             roi: "2.62%",
-            duration: "14 days",
+            purchased: "$61.21",
         },
         {
             asset: "UST (Wormhole)",
             price: "$61.21",
             roi: "2.62%",
-            duration: "14 days",
+            purchased: "$61.21",
         },
 
     ]
@@ -61,20 +61,20 @@ const Bond = () => {
                                                 <p className='ms-5 silent'>Assets</p>
                                             </div>
                                         </div>
-                                        <div className="mt-3 mb-2 m-md-0 ">
-                                            <p className='ms-5 silent'>Price</p>
+                                        <div className="mt-3 mb-2 m-md-0 ps-4">
+                                            <p className='ms-5 silent'>Price (USD)</p>
+                                        </div>
+                                        <div className="mt-3 mb-2 m-md-0  ps-3">
+                                            <p className='ms-4 silent'>ROI (%)</p>
                                         </div>
                                         <div className="mt-3 mb-2 m-md-0 ">
-                                            <p className='ms-4 silent'>ROI</p>
-                                        </div>
-                                        <div className="mt-3 mb-2 m-md-0 ">
-                                            <p className='ms-4 silent'>Duration</p>
+                                            <p className='ms-4 silent'>Purchased (USD)</p>
                                         </div>
                                         <div className='bond-btn'></div>
                                     </div>
 
                                     {FarmPool.map((curElem) => {
-                                        const { asset, price, roi, duration } = curElem
+                                        const { asset, price, roi, purchased } = curElem
                                         return (
                                             <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between  my-5 my-md-2">
                                                 <div className="d-flex align-items-center assets" >
@@ -93,8 +93,8 @@ const Bond = () => {
                                                     <p className='fw-500 green'>{roi} </p>
                                                 </div>
                                                 <div className="mt-3 mb-2 m-md-0 d-flex justify-content-between tvl">
-                                                    <p className='silent d-block d-md-none'>Duration</p>
-                                                    <p className='fw-500'>{duration}</p>
+                                                    <p className='silent d-block d-md-none'>purchased</p>
+                                                    <p className='fw-500'>{purchased}</p>
                                                 </div>
                                                 <div className='bond-btn'>
                                                     <button className='cw-btn mt-3 mb-2 px-2 w-100 te-center'>Bond</button>
