@@ -8,6 +8,7 @@
   justify-content: space-between;
   flex-direction: column;
   position: fixed;
+  float: right;
   z-index: 10;
   backdrop-filter: blur(5px);
 }
@@ -47,11 +48,12 @@
 .ActionBar .language {
   background-color: #14151a;
   position: absolute;
-  right: -0.5rem;
-  top: 3.5rem;
+  left: 1%;
+  top: 4rem;
   padding: 1rem 0.7rem;
   border-radius: 15px;
   color: #fff;
+  animation: fade 0.2s;
 }
 
 .ActionBar .language .nav_li {
@@ -60,6 +62,43 @@
 
 .ActionBar .language .nav_li:hover {
   background-color: #256cd0 !important;
+}
+
+.ActionBar .wallet-popup {
+  position: absolute;
+  top: 10vh;
+  left: -25vw;
+  background-color: #14151a;
+  width: 40vw;
+  max-width: 1000px;
+  animation: fade 0.2s;
+  border-radius: 2rem;
+  color: white;
+  height: fit-content;
+}
+
+.ActionBar .wallet-popup .body {
+  background-color: #14151a;
+  border-radius: 2rem;
+  height: fit-content;
+}
+
+.ActionBar .wallet-popup .body .cards {
+  background-color: #14151a;
+  margin: 0;
+  height: fit-content;
+}
+.ActionBar .wallet-popup .body .cards button {
+  width: auto;
+}
+
+.ActionBar .wallet-popup .token {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 0.7rem;
 }
 
 /* Theme settings */
@@ -88,8 +127,46 @@ body.light .ActionBar {
 }
 
 /* to keep it stick to right on md-lg */
+
 @media only screen and (min-width: 780px) {
   .ActionBar {
+    position: fixed;
     right: 2rem;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .ActionBar .wallet-popup {
+    position: absolute;
+    top: 10vh;
+    left: -10%;
+    width: 80vw;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .ActionBar .wallet-popup {
+    left: 6% !important;
+  }
+
+  .ActionBar .wallet-popup .body .cards button {
+    width: 100vw;
+    margin: 0.6rem 0 !important;
+  }
+  .ActionBar .wallet-popup .body {
+    max-height: 80vh;
+    top: 10rem;
+    overflow: scroll;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }

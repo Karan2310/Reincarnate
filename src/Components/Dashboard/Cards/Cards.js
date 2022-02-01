@@ -33,10 +33,10 @@ const Cards = () => {
         <>
             <div className="cards_con container-fluid mb-4 px-4 py-2 p-md-0" >
                 <div className="row gy-2">
-                    {cards.map((curElem) => {
+                    {cards.map((curElem, index) => {
                         const { title, data } = curElem
                         return (
-                            <div className="col-md-4 mb-3" >
+                            <div className="col-md-4 mb-3" key={index} >
                                 <div className="cards">
                                     <p className='title'>{title}</p>
                                     <p className='fw-600 mt-2 data'>{data}</p>

@@ -5,9 +5,14 @@ import Theme from '../../Utils/Theme'
 
 const ActionBar = () => {
     const [language, setLanguage] = useState(false);
+    const [walletActive, setWalletActive] = useState(false)
 
     const chooseLanguage = () => {
         setLanguage(!language)
+    }
+
+    const openWallet = () => {
+        setWalletActive(!walletActive)
     }
 
     return (
@@ -17,7 +22,7 @@ const ActionBar = () => {
                     {/* Theme */}
                     <Theme />
                     {/* Language */}
-                    <button style={{ position: "relative" }} id='lang-btn' onClick={chooseLanguage} >
+                    <button id='lang-btn' onClick={chooseLanguage} >
                         <img src="https://img.icons8.com/color/48/000000/great-britain-circular.png" alt='language' />
                         <div className={`language ${language ? "" : "d-none"}`}>
                             <ul style={{ listStyle: "none" }}>
@@ -57,14 +62,55 @@ const ActionBar = () => {
                         </div>
                     </button>
                     {/* Connect Wallet */}
-                    <button style={{ width: "fit-content" }} className>
+                    <button style={{ width: "fit-content" }} className="wallet" onClick={openWallet}>
                         <i class="fas fa-wallet"></i>
                         <p> Connect wallet</p>
                     </button>
+                    <div className={` wallet-popup ${walletActive ? "d-block" : "d-none"}`} >
+
+                        <div className="body">
+                            <div className="w-100 conatiner-fluid" >
+                                <div className="cards container-fluid p-4">
+                                    <h5 className='fw-600 text-start' style={{ fontSize: "1.1rem" }}><i className="fas fa-wallet" style={{ color: "#615A9E", fontSize: "1.3rem" }}></i>Wallet Info</h5>
+                                    <div className="row my-2 mt-6 ">
+                                        <div className="col-md-6 my-3 my-md-0 text-start text-md-center">
+                                            <div className="d-flex flex-column">
+                                                <p className='title'>Total Balance</p>
+                                                <p className='data'>$6322 </p>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-6 my-3 my-md-0 text-start text-md-center">
+                                            <div className="d-flex flex-column">
+                                                <p className='title'>Tokens Available</p>
+                                                <div className="d-flex align-content-center justify-content-md-center mt-2">
+                                                    <div className="token"></div>
+                                                    <div className="token"></div>
+                                                    <div className="token"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="d-flex align-items-center flex-wrap align-content-center justify-content-center links">
+                                        <button className='cw-btn mt-4 mb-2 d-flex align-content-center justify-content-center '>Buy on Uniswap<img src="https://cryptologos.cc/logos/uniswap-uni-logo.png" alt="" className='ms-2' />
+                                        </button>
+                                        <button className='cw-btn mt-4 mb-2 d-flex align-content-center justify-content-center '>Buy on Sushiswap<img src="https://cryptologos.cc/logos/sushiswap-sushi-logo.png" alt="" className='ms-2' />
+                                        </button>
+                                        <button className='cw-btn mt-4 mb-2 d-flex align-content-center justify-content-center '>Borrow on Rari Capital<img src="http://rari.capital/images/finallsmall.png" alt="" className='ms-2' />
+                                        </button>
+                                        <button className='cw-btn mt-4 mb-2 d-flex align-content-center justify-content-center '>Rusowsky's Dashboard
+                                        </button>
+                                        <button className='cw-btn mt-4 mb-2 d-flex align-content-center justify-content-center '>Shadow's Dashboard
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                     {/* Mobile Nav button */}
                     <MobileNav />
                 </div>
-            </div>
+            </div >
         </>
     )
 

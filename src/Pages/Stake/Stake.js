@@ -79,10 +79,10 @@ const Stake = () => {
                                         <div className='stake-btn'></div>
                                     </div>
 
-                                    {FarmPool.map((curElem) => {
+                                    {FarmPool.map((curElem, index) => {
                                         const { asset, tvl, button } = curElem
                                         return (
-                                            <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between  my-5 my-md-2">
+                                            <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between  my-5 my-md-2" key={index}>
                                                 <div className="d-flex align-items-center ">
                                                     <div className="circle"></div>
                                                     <div className="circle2" ></div>
