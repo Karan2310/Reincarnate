@@ -1,8 +1,7 @@
 import React from 'react';
 import './Graphs.css'
 import Chart1 from '../../../Assets/Yello chart.png'
-// import Chart2 from '../../Assets/Pink chart.png'
-// import Chart3 from '../../Assets/Purple chart.png'
+
 
 const Graphs = () => {
     return (
