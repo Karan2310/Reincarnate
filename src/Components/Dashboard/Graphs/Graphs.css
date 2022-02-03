@@ -11,16 +11,7 @@
 }
 
 body.dark .company-graph .company-card:hover {
-  filter: brightness(1.2);
-}
-
-body.light .company-graph .company-card {
-  background-color: rgb(243, 243, 243);
-  box-shadow: var(--shadow);
-}
-
-body.light .company-graph .company-card:hover {
-  background-color: #e7eef8;
+  filter: brightness(1.5);
 }
 
 .company-graph .company-card:nth-child(1) {
@@ -40,6 +31,33 @@ body.light .company-graph .company-card:hover {
 }
 .company-graph .company-card:nth-child(6) {
   color: #d63d3d;
+}
+
+body.dark .company-graph #company-1 {
+  background-color: #de9e2745;
+}
+body.dark .company-graph #company-2 {
+  background-color: #d6683d42;
+}
+body.dark .company-graph #company-3 {
+  background-color: #7c49af3d;
+}
+body.dark .company-graph #company-4 {
+  background-color: #2790db3b;
+}
+body.dark .company-graph #company-5 {
+  background-color: #3fde2739;
+}
+body.dark .company-graph #company-6 {
+  background-color: #d63d3d34;
+}
+
+body.light .company-graph .company-card {
+  background-color: rgb(243, 243, 243);
+}
+
+body.light .company-graph .company-card:hover {
+  background-color: #eaf3ff;
 }
 
 .company-graph img {

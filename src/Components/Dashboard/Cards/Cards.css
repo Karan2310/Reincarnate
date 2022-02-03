@@ -5,9 +5,62 @@
 .cards {
   background-color: var(--cardColor);
   padding: 1rem 0rem;
-  border-radius: 2rem;
+  border-radius: 1.7rem;
   box-shadow: var(--shadow);
   text-align: center;
+}
+
+.dashboard .cards_con .cards {
+  box-shadow: none;
+}
+
+.dashboard .cards_con #card-1 .cards {
+  background-color: #574d33;
+}
+
+.dashboard .cards_con #card-2 .cards {
+  background-color: #2b335d;
+}
+
+.dashboard .cards_con #card-3 .cards {
+  background-color: #294849;
+}
+
+.dashboard .cards_con #card-4 .cards {
+  background-color: #57414e;
+}
+
+.dashboard .cards_con #card-5 .cards {
+  background-color: #542641;
+}
+
+.dashboard .cards_con #card-6 .cards {
+  background-color: #323053;
+}
+
+/* Light */
+body.light .dashboard .cards_con #card-1 .cards {
+  background-color: #ffeab6;
+}
+
+body.light .dashboard .cards_con #card-2 .cards {
+  background-color: #b2bfff;
+}
+
+body.light .dashboard .cards_con #card-3 .cards {
+  background-color: #90ece4db;
+}
+
+body.light .dashboard .cards_con #card-4 .cards {
+  background-color: #ffc9d7;
+}
+
+body.light .dashboard .cards_con #card-5 .cards {
+  background-color: #fcd4c8;
+}
+
+body.light .dashboard .cards_con #card-6 .cards {
+  background-color: #8e00c242;
 }
 
 .cards .title {
