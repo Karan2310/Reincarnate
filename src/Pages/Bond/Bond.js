@@ -43,19 +43,20 @@ const Bond = () => {
                                     <div className="row my-2 mt-4 ">
                                         <div className="col-md-6 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>Treasury Balance (USD)</p>
                                                 <p className='data'>$534,483,370</p>
+                                                <p className='title bg-transparent' style={{ color: "rgb(126, 126, 126)" }}>Treasury Balance (USD)</p>
                                             </div>
                                         </div>
                                         <div className="col-md-6 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>REM Price (USD)</p>
                                                 <p className='data'>$62.86</p>
+                                                <p className='title bg-transparent' style={{ color: "rgb(126, 126, 126)" }}>REM Price (USD)</p>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div className="d-none d-md-flex flex-column flex-md-row  align-items-center justify-content-md-between  mt-md-4 ">
+                                </div>
+                                <div className="cards container-fluid py-4 px-3 mt-4">
+                                    <div className="d-none d-md-flex flex-column flex-md-row  align-items-center justify-content-md-between  headings">
                                         <div className="d-flex align-items-center ">
                                             <div className="fw-500 ms-5 ">
                                                 <p className='ms-5 silent'>Assets</p>
@@ -76,9 +77,9 @@ const Bond = () => {
                                     {FarmPool.map((curElem, index) => {
                                         const { asset, price, roi, purchased } = curElem
                                         return (
-                                            <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between  my-5 my-md-2" key={index}>
+                                            <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between my-5 my-md-2 table-row" key={index} type={(index + 1) % 2 === 0 ? "even" : "odd"} >
                                                 <div className="d-flex align-items-center assets" >
-                                                    <div className="circle2 ms-1 ms-md-2" ></div>
+                                                    <div className="circle2 ms-1 ms-md-2 me-2" ></div>
                                                     <div className="fw-500 ms-3">
                                                         <p style={{ fontSize: "0.9rem", fontWeight: "600" }}>{asset}</p>
                                                         <a href="##" style={{ fontSize: "0.7rem" }}>View Asset <i class="fas fa-external-link-alt "></i></a>

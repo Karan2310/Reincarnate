@@ -64,17 +64,17 @@ const Stake = () => {
                                     <button className='cw-btn mt-4 mb-3'>Connect Wallet</button>
                                 </div>
 
-                                <div className="cards container-fluid p-4 my-5">
+                                <div className="cards container-fluid py-4 px-3 my-5">
                                     <h5 className='fw-600 text-start mb-4' style={{ fontSize: "1.1rem" }}>Farm Pool</h5>
 
-                                    <div className="d-none d-md-flex flex-column flex-md-row  align-items-center justify-content-md-between  my-md-1 ">
+                                    <div className="d-none d-md-flex flex-column flex-md-row  align-items-center justify-content-md-between  my-md-1 headings ">
                                         <div className="d-flex align-items-center ">
                                             <div className="fw-500 ms-5 ">
-                                                <p className='ms-5 silent' style={{ fontSize: "0.rem" }}>Assets</p>
+                                                <p className='ms-5 silent'>Assets</p>
                                             </div>
                                         </div>
                                         <div className="mt-3 mb-2 m-md-0 ">
-                                            <p className='ms-4 silent' style={{ fontSize: "0.9rem" }}>TVL</p>
+                                            <p className='ms-4 fw-500 silent'>TVL</p>
                                         </div>
                                         <div className='stake-btn'></div>
                                     </div>
@@ -82,7 +82,7 @@ const Stake = () => {
                                     {FarmPool.map((curElem, index) => {
                                         const { asset, tvl, button } = curElem
                                         return (
-                                            <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between  my-5 my-md-2" key={index}>
+                                            <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between  my-5 my-md-2 table-row" key={index} type={(index + 1) % 2 === 0 ? "even" : "odd"}>
                                                 <div className="d-flex align-items-center ">
                                                     <div className="circle"></div>
                                                     <div className="circle2" ></div>

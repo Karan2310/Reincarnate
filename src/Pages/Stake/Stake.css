@@ -42,7 +42,8 @@
 }
 
 .stake .silent {
-  color: #656971;
+  color: var(--text);
+  font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 766px) {
