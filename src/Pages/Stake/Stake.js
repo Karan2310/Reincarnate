@@ -61,7 +61,22 @@ const Stake = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <button className='cw-btn mt-4 mb-3'>Connect Wallet</button>
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <div class="accordion-item bg-transparent">
+                                            <button className='cw-btn mt-4 mb-3' data-bs-toggle="collapse" data-bs-target="#stakeCollapse">Connect Wallet</button>
+                                            <div id="stakeCollapse" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body w-100 p-0">
+                                                    <div className="container-fluid acc-box">
+                                                        <input type="tel" placeholder='Enter Amount' />
+                                                        <div className="w-100 d-flex align-items-justify justify-content-between mt-3">
+                                                            <button className='cw-btn'>MAX</button>
+                                                            <button className='cw-btn'>Stake REM</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div className="cards container-fluid py-4 px-3 my-5">
