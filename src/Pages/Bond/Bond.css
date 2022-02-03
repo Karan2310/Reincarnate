@@ -35,9 +35,23 @@
   padding: 0 0.8rem;
   border-radius: 15px;
 }
+
 .cards .table-row:hover {
   background-color: #40434fbf;
   border-radius: 15px;
+}
+
+/* Light */
+body.light .cards .headings {
+  background-color: #f1f1f1;
+}
+
+body.light .cards .table-row[type="even"] {
+  background-color: #f1f1f1;
+}
+
+body.light .cards .table-row:hover {
+  background-color: #eaefff;
 }
 
 .bond .cards .circle,
