@@ -51,7 +51,7 @@ body.light .cards .table-row[type="even"] {
 }
 
 body.light .cards .table-row:hover {
-  background-color: #eaefff;
+  background-color: #ff97371d;
 }
 
 .bond .cards .circle,

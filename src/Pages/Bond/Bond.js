@@ -77,7 +77,7 @@ const Bond = () => {
                                     {FarmPool.map((curElem, index) => {
                                         const { asset, price, roi, purchased } = curElem
                                         return (
-                                            <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between my-5 my-md-2 table-row" key={index} type={(index + 1) % 2 === 0 ? "even" : "odd"} >
+                                            <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between my-0 my-md-2 table-row" key={index} type={(index + 1) % 2 === 0 ? "even" : "odd"} >
                                                 <div className="d-flex align-items-center assets" >
                                                     <div className="circle2 ms-1 ms-md-2 me-2" ></div>
                                                     <div className="fw-500 ms-3">

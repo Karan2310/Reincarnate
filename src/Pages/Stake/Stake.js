@@ -83,10 +83,10 @@ const Stake = () => {
                                         const { asset, tvl, button } = curElem
                                         return (
                                             <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between  my-5 my-md-2 table-row" key={index} type={(index + 1) % 2 === 0 ? "even" : "odd"}>
-                                                <div className="d-flex align-items-center ">
+                                                <div className="d-flex align-items-center">
                                                     <div className="circle"></div>
                                                     <div className="circle2" ></div>
-                                                    <div className="fw-500 ms-3">
+                                                    <div className="fw-500 ms-4">
                                                         <p style={{ fontSize: "1rem" }}>{asset}</p>
                                                     </div>
                                                 </div>
