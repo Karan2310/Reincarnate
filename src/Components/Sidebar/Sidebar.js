@@ -20,7 +20,7 @@ const Sidebar = (props) => {
                         <p className='fw-700'>Reincarnate</p>
                     </a>
                     <button className='d-flex d-md-none ' onClick={props.toggleNav} >
-                        <i class="fa-solid fa-xmark"></i>
+                        <i className="fa-solid fa-xmark"></i>
                     </button>
                 </div>
 
@@ -103,16 +103,16 @@ const Sidebar = (props) => {
                 <div className="container-fluid bottom p-0 m-0" style={{ backgroundColor: social ? "#232328" : "#101016" }}>
                     <div className={`social_link p-2 d-flex align-items-center justify-content-around w-100 ${social ? "d-flex" : "d-none"}`} style={{ fontSize: "1.4rem", backgroundColor: "#232328", flexWrap: "wrap" }}>
                         <a href="https://github.com/Reincarnate" target={"blank"}>
-                            <i class="fab fa-github"></i>
+                            <i className="fab fa-github"></i>
                         </a>
                         <a href="https://Reincarnate.medium.com/" target={"blank"}>
-                            <i class="fab fa-medium"></i>
+                            <i className="fab fa-medium"></i>
                         </a>
                         <a href="https://twitter.com/Reincarnate" target={"blank"}>
-                            <i class="fab fa-twitter"></i>
+                            <i className="fab fa-twitter"></i>
                         </a>
                         <a href="https://discord.com/invite/6QjjtUcfM4" target={"blank"}>
-                            <i class="fab fa-discord"></i>
+                            <i className="fab fa-discord"></i>
                         </a>
                     </div>
                     <div className="socials py-2 px-3" onClick={showSocial}>

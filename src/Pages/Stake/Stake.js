@@ -69,11 +69,11 @@ const Stake = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                                        <div class="accordion-item bg-transparent">
+                                    <div className="accordion accordion-flush" id="accordionFlushExample">
+                                        <div className="accordion-item bg-transparent">
                                             <button className='cw-btn mt-4 mb-3' data-bs-toggle="collapse" data-bs-target="#stakeCollapse">Connect Wallet</button>
-                                            <div id="stakeCollapse" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body w-100 p-0">
+                                            <div id="stakeCollapse" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                <div className="accordion-body w-100 p-0">
                                                     <div className="container-fluid acc-box">
                                                         <input type="tel" placeholder='Enter Amount' />
                                                         <div className="w-100 d-flex align-items-justify justify-content-between mt-3">
@@ -122,7 +122,7 @@ const Stake = () => {
                                                     <p className='fw-500' style={{ fontSize: "1rem" }}>{tvl} </p>
                                                 </div>
                                                 <div className='stake-btn'>
-                                                    <button className='cw-btn mt-3 mb-2 px-2 w-100 te-center' style={{ fontSize: "0.9rem" }}>{button} <i class="fas fa-external-link-alt ms-2"></i></button>
+                                                    <button className='cw-btn mt-3 mb-2 px-2 w-100 te-center' style={{ fontSize: "0.9rem" }}>{button} <i className="fas fa-external-link-alt ms-2"></i></button>
                                                 </div>
                                             </div>
                                         )

@@ -63,7 +63,7 @@ const ActionBar = () => {
                     </button>
                     {/* Connect Wallet */}
                     <button style={{ width: "fit-content" }} className="wallet" onClick={openWallet}>
-                        <i class="fas fa-wallet"></i>
+                        <i className="fas fa-wallet"></i>
                         <p> Connect wallet</p>
                     </button>
                     <div className={` wallet-popup ${walletActive ? "d-block" : "d-none"}`} >

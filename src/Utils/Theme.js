@@ -40,7 +40,7 @@ const Theme = () => {
     return (
         <div className='theme'>
             <button className={theme === "dark" ? clickedClass : ""} id='darkMode' onClick={(e) => switchTheme(e)}>
-                {curTheme === "dark" ? <i class="fa-solid fa-moon"></i> : <i class="fa-solid fa-sun"></i>}
+                {curTheme === "dark" ? <i className="fa-solid fa-moon"></i> : <i className="fa-solid fa-sun"></i>}
             </button>
         </div>
     );

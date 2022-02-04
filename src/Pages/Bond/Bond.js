@@ -42,7 +42,7 @@ const Bond = () => {
                             <div className="px-4 px-md-0 w-100 mb-5 " data-aos="fade-up">
                                 <div className="cards container-fluid p-4">
                                     <h5 className='fw-600 text-start d-flex align-items-center'>
-                                        <i class="fas fa-certificate" style={{ fontSize: "1.5rem", color: "#ac6849" }}></i>Bond (4, 4)</h5>
+                                        <i className="fas fa-certificate" style={{ fontSize: "1.5rem", color: "#ac6849" }}></i>Bond (4, 4)</h5>
                                     <div className="row my-2 mt-4 ">
                                         <div className="col-md-6 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
@@ -87,7 +87,7 @@ const Bond = () => {
                                                     </div>
                                                     <div className="fw-500 ms-3">
                                                         <p style={{ fontSize: "0.9rem", fontWeight: "600" }}>{asset}</p>
-                                                        <a href="##" style={{ fontSize: "0.7rem" }}>View Asset <i class="fas fa-external-link-alt "></i></a>
+                                                        <a href="##" style={{ fontSize: "0.7rem" }}>View Asset <i className="fas fa-external-link-alt "></i></a>
                                                     </div>
                                                 </div>
                                                 <div className="mt-3 mb-2 m-md-0 d-flex justify-content-between tvl ">
