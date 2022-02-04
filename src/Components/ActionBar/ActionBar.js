@@ -76,7 +76,7 @@ const ActionBar = () => {
                                         <div className="col-md-6 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
                                                 <p className='title'>Total Balance</p>
-                                                <p className='data'>$6322 </p>
+                                                <p className='data text-light'>$6322 </p>
                                             </div>
                                         </div>
                                         <div className="col-md-6 my-3 my-md-0 text-start text-md-center">
