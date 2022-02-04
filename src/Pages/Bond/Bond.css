@@ -3,6 +3,26 @@
   max-width: 900px;
 }
 
+.bond .bond-cards1 {
+  border-radius: 1.2rem;
+  padding: 1rem 0.5rem;
+  background-color: rgb(177, 162, 43);
+}
+
+.bond .bond-cards2 {
+  border-radius: 1.2rem;
+  padding: 1rem 0.5rem;
+  background-color: rgb(90, 53, 145);
+}
+
+body.light .bond .bond-cards1 {
+  background-color: rgb(255, 248, 195);
+}
+
+body.light .bond .bond-cards2 {
+  background-color: rgb(215, 200, 238);
+}
+
 .bond .title {
   background-color: hsla(0, 0%, 100%, 0.038);
   font-size: 0.8rem;

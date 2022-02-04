@@ -75,17 +75,23 @@ const ActionBar = () => {
                                     <div className="row my-2 mt-6 ">
                                         <div className="col-md-6 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>Total Balance</p>
+                                                <p className='title bg-transparent text-light'>Total Balance</p>
                                                 <p className='data text-light'>$6322 </p>
                                             </div>
                                         </div>
                                         <div className="col-md-6 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>Tokens Available</p>
+                                                <p className='title bg-transparent text-light'>Tokens Available</p>
                                                 <div className="d-flex align-content-center justify-content-md-center mt-2">
-                                                    <div className="token"></div>
-                                                    <div className="token"></div>
-                                                    <div className="token"></div>
+                                                    <div className="token">
+                                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png" alt="" className='img-fluid' />
+                                                    </div>
+                                                    <div className="token">
+                                                        <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Solana_logo.png" alt="" className='img-fluid' />
+                                                    </div>
+                                                    <div className="token">
+                                                        <img src="https://bitcoin.org/img/icons/opengraph.png?1643058474" alt="" className='img-fluid' />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

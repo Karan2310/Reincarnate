@@ -34,7 +34,7 @@ body.light .stake .accordion-body .acc-box {
 }
 
 .stake .title {
-  color: rgb(126, 126, 126);
+  color: var(--text);
   font-size: 0.7rem;
 }
 
@@ -42,6 +42,36 @@ body.light .stake .accordion-body .acc-box {
   color: var(--text);
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+.stake .info-card1,
+.info-card2,
+.info-card3 {
+  border-radius: 1.2rem;
+  padding: 1rem 0.5rem;
+}
+
+.stake .info-card1 {
+  background-color: rgb(51, 120, 53);
+}
+
+.stake .info-card2 {
+  background-color: rgb(177, 162, 43);
+}
+.stake .info-card3 {
+  background-color: rgb(44, 145, 150);
+}
+
+body.light .stake .info-card1 {
+  background-color: rgb(190, 255, 193);
+}
+
+body.light .stake .info-card2 {
+  background-color: rgb(255, 246, 177);
+}
+
+body.light .stake .info-card3 {
+  background-color: rgb(209, 253, 255);
 }
 
 .stake .cards .circle,

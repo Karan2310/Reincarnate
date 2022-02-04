@@ -51,19 +51,19 @@ const Stake = () => {
                                     <p className='fw-500 text-start mt-1' style={{ fontSize: "0.6rem" }}>5 hrs, 50 mins to next rebase</p>
                                     <div className="row my-2 mt-3 ">
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
-                                            <div className="d-flex flex-column">
+                                            <div className="d-flex flex-column info-card1">
                                                 <p className='data'>1,328.5%</p>
                                                 <p className='title'>APY</p>
                                             </div>
                                         </div>
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
-                                            <div className="d-flex flex-column">
+                                            <div className="d-flex flex-column info-card2">
                                                 <p className='data'>$500,811,977</p>
                                                 <p className='title'>Total Value Deposited (USD)</p>
                                             </div>
                                         </div>
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
-                                            <div className="d-flex flex-column">
+                                            <div className="d-flex flex-column info-card3">
                                                 <p className='data'>74.7 sREM</p>
                                                 <p className='title'>Current Index (REM)</p>
                                             </div>

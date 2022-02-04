@@ -4,7 +4,7 @@
 }
 
 .wrap .title {
-  color: rgb(126, 126, 126);
+  color: var(--text);
   font-size: 0.8rem;
 }
 
@@ -12,6 +12,36 @@
   color: var(--text);
   font-size: 1.1rem;
   font-weight: 600;
+}
+
+.wrap .wrap-card1,
+.wrap-card2,
+.wrap-card3 {
+  border-radius: 1.2rem;
+  padding: 1rem 0.5rem;
+}
+
+.wrap .wrap-card1 {
+  background-color: rgb(116, 51, 120);
+}
+
+.wrap .wrap-card2 {
+  background-color: rgb(177, 162, 43);
+}
+.wrap .wrap-card3 {
+  background-color: rgb(44, 145, 150);
+}
+
+body.light .wrap .wrap-card1 {
+  background-color: rgb(252, 201, 255);
+}
+
+body.light .wrap .wrap-card2 {
+  background-color: rgb(255, 246, 177);
+}
+
+body.light .wrap .wrap-card3 {
+  background-color: rgb(209, 253, 255);
 }
 
 /* Button with fill Animation */

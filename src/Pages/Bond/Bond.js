@@ -44,16 +44,16 @@ const Bond = () => {
                                     <h5 className='fw-600 text-start d-flex align-items-center'>
                                         <i className="fas fa-certificate" style={{ fontSize: "1.5rem", color: "#ac6849" }}></i>Bond (4, 4)</h5>
                                     <div className="row my-2 mt-4 ">
-                                        <div className="col-md-6 my-3 my-md-0 text-start text-md-center">
-                                            <div className="d-flex flex-column">
+                                        <div className="col-md-6 my-3 my-md-0 text-start text-md-center ">
+                                            <div className="d-flex flex-column bond-cards1">
                                                 <p className='data'>$534,483,370</p>
-                                                <p className='title bg-transparent' style={{ color: "rgb(126, 126, 126)" }}>Treasury Balance (USD)</p>
+                                                <p className='title bg-transparent silent_text' >Treasury Balance (USD)</p>
                                             </div>
                                         </div>
                                         <div className="col-md-6 my-3 my-md-0 text-start text-md-center">
-                                            <div className="d-flex flex-column">
+                                            <div className="d-flex flex-column bond-cards2" style={{ color: "red" }}>
                                                 <p className='data'>$62.86</p>
-                                                <p className='title bg-transparent' style={{ color: "rgb(126, 126, 126)" }}>REM Price (USD)</p>
+                                                <p className='title bg-transparent silent_text'>REM Price (USD)</p>
                                             </div>
                                         </div>
                                     </div>

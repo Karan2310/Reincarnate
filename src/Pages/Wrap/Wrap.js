@@ -20,19 +20,19 @@ const Wrap = () => {
                                     <h5 className='fw-600 text-start' style={{ fontSize: "1.1rem" }}><i className="fas fa-toilet-paper" style={{ color: "#ac6849", fontSize: "1.3rem" }}></i>Wrap/Unwrap</h5>
                                     <div className="row my-2 mt-4 ">
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
-                                            <div className="d-flex flex-column">
+                                            <div className="d-flex flex-column wrap-card1">
                                                 <p className='data'>$63.57 </p>
                                                 <p className='title'>sREM Price</p>
                                             </div>
                                         </div>
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
-                                            <div className="d-flex flex-column">
+                                            <div className="d-flex flex-column wrap-card2">
                                                 <p className='data'>74.5</p>
                                                 <p className='title'>Current Index</p>
                                             </div>
                                         </div>
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
-                                            <div className="d-flex flex-column">
+                                            <div className="d-flex flex-column wrap-card3">
                                                 <p className='data'>$4,727.39</p>
                                                 <p className='title'>gREM Price</p>
                                             </div>
