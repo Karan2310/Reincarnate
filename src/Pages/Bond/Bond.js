@@ -10,18 +10,21 @@ const Bond = () => {
             price: "$61.21",
             roi: "2.62%",
             purchased: "$61.21",
+            coin: "https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png"
         },
         {
             asset: "FRAX",
             price: "$61.21",
             roi: "2.62%",
             purchased: "$61.21",
+            coin: "https://upload.wikimedia.org/wikipedia/en/b/b9/Solana_logo.png"
         },
         {
             asset: "UST (Wormhole)",
             price: "$61.21",
             roi: "2.62%",
             purchased: "$61.21",
+            coin: "https://bitcoin.org/img/icons/opengraph.png?1643058474"
         },
 
     ]
@@ -75,23 +78,25 @@ const Bond = () => {
                                     </div>
 
                                     {FarmPool.map((curElem, index) => {
-                                        const { asset, price, roi, purchased } = curElem
+                                        const { asset, price, roi, purchased, coin } = curElem
                                         return (
                                             <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between my-0 my-md-2 table-row" key={index} type={(index + 1) % 2 === 0 ? "even" : "odd"} >
                                                 <div className="d-flex align-items-center assets" >
-                                                    <div className="circle2 ms-1 ms-md-2 me-2" ></div>
+                                                    <div className="circle2 ms-0 ms-md-2 me-2" >
+                                                        <img src={coin} alt="coin" className='img-fluid' />
+                                                    </div>
                                                     <div className="fw-500 ms-3">
                                                         <p style={{ fontSize: "0.9rem", fontWeight: "600" }}>{asset}</p>
                                                         <a href="##" style={{ fontSize: "0.7rem" }}>View Asset <i class="fas fa-external-link-alt "></i></a>
                                                     </div>
                                                 </div>
-                                                <div className="mt-3 mb-2 m-md-0 d-flex justify-content-between tvl">
+                                                <div className="mt-3 mb-2 m-md-0 d-flex justify-content-between tvl ">
                                                     <p className='silent d-block d-md-none'>Price</p>
-                                                    <p className='fw-500'>{price} </p>
+                                                    <p className='fw-500'>{price}</p>
                                                 </div>
                                                 <div className="mt-3 mb-2 m-md-0 d-flex justify-content-between tvl">
                                                     <p className='silent d-block d-md-none'>ROI</p>
-                                                    <p className='fw-500 green'>{roi} </p>
+                                                    <p className='fw-500 green'>{roi}</p>
                                                 </div>
                                                 <div className="mt-3 mb-2 m-md-0 d-flex justify-content-between tvl">
                                                     <p className='silent d-block d-md-none'>purchased</p>

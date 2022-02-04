@@ -8,22 +8,30 @@ const Stake = () => {
         {
             asset: "gREM-AVAX",
             tvl: "$4,767,398.72",
-            button: "Stake on Joe"
+            button: "Stake on Joe",
+            logo1: "https://d33wubrfki0l68.cloudfront.net/fcd4ecd90386aeb50a235ddc4f0063cfbb8a7b66/4295e/static/bfc04ac72981166c740b189463e1f74c/40129/eth-diamond-black-white.jpg",
+            logo2: "https://s2.coinmarketcap.com/static/img/coins/200x200/5805.png"
         },
         {
             asset: "gREM-wETH",
             tvl: "$2,985,650.26",
-            button: "Stake on Sushi"
+            button: "Stake on Sushi",
+            logo1: "https://bitcoin.org/img/icons/opengraph.png?1643058474",
+            logo2: "https://upload.wikimedia.org/wikipedia/en/b/b9/Solana_logo.png"
         },
         {
             asset: "gREM-wETH",
             tvl: "$2,038,497.23",
-            button: "Stake on Joe (Polygon)"
+            button: "Stake on Joe (Polygon)",
+            logo1: "https://d33wubrfki0l68.cloudfront.net/fcd4ecd90386aeb50a235ddc4f0063cfbb8a7b66/4295e/static/bfc04ac72981166c740b189463e1f74c/40129/eth-diamond-black-white.jpg",
+            logo2: "https://s2.coinmarketcap.com/static/img/coins/64x64/3890.png"
         },
         {
             asset: "gREM-FTM",
             tvl: "$1,099,128.90",
-            button: "Stake on Spirit (Fantom)"
+            button: "Stake on Spirit (Fantom)",
+            logo1: "https://cryptologos.cc/logos/tron-trx-logo.png",
+            logo2: "https://d33wubrfki0l68.cloudfront.net/fcd4ecd90386aeb50a235ddc4f0063cfbb8a7b66/4295e/static/bfc04ac72981166c740b189463e1f74c/40129/eth-diamond-black-white.jpg",
         },
     ]
     return (
@@ -44,20 +52,20 @@ const Stake = () => {
                                     <div className="row my-2 mt-3 ">
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>APY</p>
                                                 <p className='data'>1,328.5%</p>
+                                                <p className='title'>APY</p>
                                             </div>
                                         </div>
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>Total Value Deposited (USD)</p>
                                                 <p className='data'>$500,811,977</p>
+                                                <p className='title'>Total Value Deposited (USD)</p>
                                             </div>
                                         </div>
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>Current Index (REM)</p>
                                                 <p className='data'>74.7 sREM</p>
+                                                <p className='title'>Current Index (REM)</p>
                                             </div>
                                         </div>
                                     </div>
@@ -69,7 +77,7 @@ const Stake = () => {
                                                     <div className="container-fluid acc-box">
                                                         <input type="tel" placeholder='Enter Amount' />
                                                         <div className="w-100 d-flex align-items-justify justify-content-between mt-3">
-                                                            <button className='cw-btn'>MAX</button>
+                                                            <button className='cw-btn me-2'>MAX</button>
                                                             <button className='cw-btn'>Stake REM</button>
                                                         </div>
                                                     </div>
@@ -95,12 +103,16 @@ const Stake = () => {
                                     </div>
 
                                     {FarmPool.map((curElem, index) => {
-                                        const { asset, tvl, button } = curElem
+                                        const { asset, tvl, button, logo1, logo2 } = curElem
                                         return (
                                             <div className="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between  my-5 my-md-2 table-row" key={index} type={(index + 1) % 2 === 0 ? "even" : "odd"}>
                                                 <div className="d-flex align-items-center">
-                                                    <div className="circle"></div>
-                                                    <div className="circle2" ></div>
+                                                    <div className="circle">
+                                                        <img src={logo1} alt="coin" />
+                                                    </div>
+                                                    <div className="circle2" >
+                                                        <img src={logo2} alt="coin" />
+                                                    </div>
                                                     <div className="fw-500 ms-4">
                                                         <p style={{ fontSize: "1rem" }}>{asset}</p>
                                                     </div>

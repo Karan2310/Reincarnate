@@ -21,20 +21,20 @@ const Wrap = () => {
                                     <div className="row my-2 mt-4 ">
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>sREM Price</p>
                                                 <p className='data'>$63.57 </p>
+                                                <p className='title'>sREM Price</p>
                                             </div>
                                         </div>
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>Current Index</p>
                                                 <p className='data'>74.5</p>
+                                                <p className='title'>Current Index</p>
                                             </div>
                                         </div>
                                         <div className="col-md-4 my-3 my-md-0 text-start text-md-center">
                                             <div className="d-flex flex-column">
-                                                <p className='title'>gREM Price</p>
                                                 <p className='data'>$4,727.39</p>
+                                                <p className='title'>gREM Price</p>
                                             </div>
                                         </div>
                                     </div>

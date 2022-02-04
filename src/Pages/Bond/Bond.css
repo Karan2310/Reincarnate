@@ -56,18 +56,18 @@ body.light .cards .table-row:hover {
 
 .bond .cards .circle,
 .bond .circle2 {
-  border: 2px solid var(--text);
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   min-height: 35px;
   min-width: 35px;
   display: block;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .bond .cards .circle2 {
   margin-left: -10px;
-  background-color: rgb(131, 214, 214);
+  background-color: transparent;
 }
 
 .bond .bond-btn button {
