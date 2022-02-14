@@ -2,6 +2,16 @@ import React, { useState } from 'react';
 import './Sidebar.css'
 import { NavLink } from 'react-router-dom';
 import logo from '../../Assets/Logo.png'
+import bondImg from '../../Assets/Bond.png'
+import stakeImg from '../../Assets/skating.png'
+import giveImg from '../../Assets/Give.png'
+import bridgeImg from '../../Assets/bridge.png'
+import forumImg from '../../Assets/Forum.png'
+import governanceImg from '../../Assets/governance.png'
+import docsImg from '../../Assets/Docs.png'
+import dashImg from '../../Assets/Dashboard.png'
+import settingImg from '../../Assets/setting.png'
+import wrapImg from '../../Assets/Wrap.png'
 
 const Sidebar = (props) => {
     // Toggle social menu
@@ -10,6 +20,12 @@ const Sidebar = (props) => {
     const showSocial = () => {
         setSocial(!social)
     }
+
+    const redirectLink = (link) => {
+        console.log(link);
+        window.open(link, "_blank");
+    }
+
     return (
         <>
             <div className="sidebar conatiner-fluid  ">
@@ -27,12 +43,12 @@ const Sidebar = (props) => {
                 {/* Middle links */}
                 <div className="container-fluid middle py-1 px-3">
                     <NavLink activeClassName="active-link" to="/" className="nav_li">
-                        <i className="fas fa-chart-line" ></i>
+                        <img src={dashImg} />
                         <p>Dashboard</p>
                     </NavLink>
-                    <NavLink activeClassName="active-link" to="/bond" className="nav_li flex-column align-items-start">
+                    <NavLink activeClassName="active-link" to="/bond" className="nav_li flex-column align-items-start" style={{ padding: "0.4rem 0.6rem", margin: "0.6rem auto" }}>
                         <div className="d-flex align-items-center justify-content-start">
-                            <i className="fas fa-certificate"></i>
+                            <img src={bondImg} width="30" />
                             <p>Bond</p>
                         </div>
                     </NavLink>
@@ -56,44 +72,44 @@ const Sidebar = (props) => {
                         </div>
                     </div>
                     <NavLink activeClassName="active-link" to="/stake" className="nav_li" >
-                        <i className="fas fa-layer-group"></i>
+                        <img src={stakeImg} width="30" />
                         <p>Stake</p>
                     </NavLink>
-                    <NavLink activeClassName="active-link" to="/give" className="nav_li">
-                        <i className="fas fa-heart"></i>
+                    <NavLink to="#" className="nav_li ext-link" style={{ padding: "0.2rem 0.7rem" }} onClick={() => redirectLink("https://www.reincarnate.io")}>
+                        <img src={giveImg} width="30" style={{ marginTop: "10px" }} />
                         <p>Give</p>
                     </NavLink>
                     <NavLink activeClassName="active-link" to="/wrap" className="nav_li">
-                        <img src="https://img.icons8.com/ios-filled/80/ffffff/wallpaper-roll.png" width={"20px"} alt='wrap' />
+                        <img src={wrapImg} width="30" />
                         <p>Wrap</p>
                     </NavLink>
-                    <NavLink activeClassName="active-link" to="/bridge" className="nav_li">
-                        <img src="https://img.icons8.com/ios-filled/50/ffffff/bridge.png" width={"20px"} alt='bridge' />
+                    <NavLink to="#" className="nav_li ext-link" onClick={() => redirectLink("https://www.reincarnate.io")} style={{ padding: "0.6rem" }}>
+                        <img src={bridgeImg} width="30" style={{ marginTop: "-5px" }} />
                         <p>Bridge</p>
                     </NavLink>
 
                     <div className="container-fluid  divider-div">
-                        <a href="##" target={"blank"} className=' d-flex align-items-center py-1'>
-                            <img src={logo} alt="Reincarnate" className='img-fluid ms-2' style={{ width: "20px" }} />
-                            <p className='fw-700'>Reincarnate Pro</p>
+                        <a href="##" target={"blank"} className=' d-flex align-items-center py-1' style={{ marginLeft: "-5px" }}>
+                            <img src={logo} alt="Reincarnate" className='img-fluid ms-3' style={{ width: "20px" }} />
+                            <p className='fw-700' style={{ fontSize: "0.7rem" }}>Reincarnate Pro</p>
                         </a>
                     </div>
 
                     <div className="container-fluid px-0 pt-2">
                         <NavLink activeClassName="active-link" to="/forum" className="nav_li">
-                            <i className="fas fa-solid fa-message"></i>
+                            <img src={forumImg} width="30" />
                             <p>Forum</p>
                         </NavLink>
                         <NavLink activeClassName="active-link" to="/governance" className="nav_li">
-                            <i className="fas fa-solid fa-user-group"></i>
+                            <img src={governanceImg} width="30" />
                             <p>Governance</p>
                         </NavLink>
                         <NavLink activeClassName="active-link" to="/docs" className="nav_li">
-                            <i className="fas fa-solid fa-file"></i>
+                            <img src={docsImg} width="30" />
                             <p>Docs</p>
                         </NavLink>
                         <NavLink activeClassName="active-link" to="/bug_bounty" className="nav_li mb-4">
-                            <i className="fas fa-solid fa-bug"></i>
+                            <img src={settingImg} width="30" />
                             <p>Bug Bounty</p>
                         </NavLink>
                     </div>
@@ -124,8 +140,8 @@ const Sidebar = (props) => {
                     <div className="profile d-flex align-items-center ">
                         <div className="avatar me-3"></div>
                         <div className="d-flex flex-column">
-                            <p>John Doe</p>
-                            <p className='silent'>CEO</p>
+                            <p>Balance</p>
+                            <p className='silent'>100T</p>
                         </div>
                     </div>
                 </div>

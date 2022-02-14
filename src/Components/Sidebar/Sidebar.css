@@ -5,8 +5,7 @@
   position: fixed;
   overflow: hidden;
   backdrop-filter: blur(0.3rem);
-  width: 17%;
-  min-width: fit-content;
+  width: 12rem;
   z-index: 1;
 }
 
@@ -21,14 +20,15 @@
 /* Navs */
 .nav_li {
   display: flex;
-  padding: 0.6rem 0.8rem;
-  border-radius: 12px;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
   font-size: 0.7rem;
   font-weight: 600;
   align-items: center;
   cursor: pointer;
   margin-bottom: 0.5rem;
   min-width: fit-content;
+  justify-content: start;
 }
 
 .nav_li:hover {
@@ -38,6 +38,9 @@
 /* Active Nav */
 .sidebar .active {
   background-color: #2a2a34;
+}
+.ext-link.active {
+  background-color: transparent;
 }
 .sidebar .nav_li.active:hover {
   background-color: #4c4c58;
@@ -49,6 +52,7 @@ img {
   font-size: 1rem;
   margin-right: 1rem;
   color: #fff;
+  width: 20px !important;
 }
 
 .sidebar a {

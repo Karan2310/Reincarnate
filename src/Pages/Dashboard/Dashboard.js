@@ -6,6 +6,7 @@ import Cards from '../../Components/Dashboard/Cards/Cards';
 import Graphs from '../../Components/Dashboard/Graphs/Graphs';
 
 const Dashboard = () => {
+
     return (
         <>
             <div className="dashboard container-fluid" >
@@ -13,7 +14,7 @@ const Dashboard = () => {
                     <div className="col-md-3 col-lg-2 p-3 h-100 d-none d-md-block">
                         <Sidebar />
                     </div>
-                    <div className="col-12 col-md-9 col-lg-10 py-3 px-0 pe-md-3 ps-md-3 ps-lg-5 " >
+                    <div className="col-12 col-md-9 col-lg-10 py-3 px-0 pe-md-3 pe-lg-5   " >
                         <div className="d-flex align-content-center justify-content-center">
                             <ActionBar />
                         </div>
@@ -21,6 +22,7 @@ const Dashboard = () => {
                         <div data-aos="fade-up">
                             {/* Cards */}
                             <Cards />
+
 
                             {/* Graphs */}
                             <div className="graphs px-4 px-md-0" >

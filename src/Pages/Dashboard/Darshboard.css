@@ -25,14 +25,18 @@ body.light .footer {
   }
 }
 
-@media only screen and (min-width: 992px) {
-  .dashboard .ps-lg-5 {
-    padding-left: 6rem !important;
+@media only screen and (min-width: 994px) {
+  .col-md-9 {
+    padding-left: 3rem !important;
   }
 }
-
-@media only screen and (min-width: 1180px) {
-  .dashboard .ps-lg-5 {
-    padding-left: 3rem !important;
+@media only screen and (min-width: 1270px) {
+  .col-md-9 {
+    padding-left: 0 !important;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .col-md-9 {
+    padding-right: 2.5rem !important;
   }
 }

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './ActionBar.css'
 import MobileNav from '../MobileNav/MobileNav';
 import Theme from '../../Utils/Theme'
+import walletImg from '../../Assets/Wallet.png'
+
 
 const ActionBar = () => {
     const [language, setLanguage] = useState(false);
@@ -63,7 +65,7 @@ const ActionBar = () => {
                     </button>
                     {/* Connect Wallet */}
                     <button style={{ width: "fit-content" }} className="wallet" onClick={openWallet}>
-                        <i className="fas fa-wallet"></i>
+                        <img src={walletImg} width="30" className='me-2' />
                         <p> Connect wallet</p>
                     </button>
                     <div className={` wallet-popup ${walletActive ? "d-block" : "d-none"}`} >
