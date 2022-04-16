@@ -1,5 +1,7 @@
 # Reincarnate
-
+Copyright [Reincarnate](reincarnate.io)
+<br/>
+Design : Reincarnate
 
 ## Demo
 
